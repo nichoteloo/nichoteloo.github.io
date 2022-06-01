@@ -79,7 +79,7 @@ const Kafka = () => {
 
                 <Grow delay={1.3} time={1}>
                     <Box display='flex' justifyContent='center' mt={8}>
-                        <Image src={kafka} alt='Kafka' />
+                        <Image src={kafka} alt='Kafka'/>
                     </Box>
                 </Grow>
 

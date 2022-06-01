@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <Main title="Homepage">
       <Container px={5} pt={20} maxW="container.md">
-        <SlideIn delay={0} time={1.8} direction="right">
+        <SlideIn delay={0} time={1} direction="right">
           <Box
             display="flex"
             flexDirection={{ base: "column", md: "row" }}
@@ -52,7 +52,7 @@ const Home = () => {
           </Box>
         </SlideIn>
 
-        <SlideIn delay={0.2} time={1.8} direction="left">
+        <SlideIn delay={0.2} time={1} direction="left">
           <Box mt={4}>
             <Heading as="h3" variant="sectionTitle">
               About
@@ -81,7 +81,7 @@ const Home = () => {
           </Box>
         </SlideIn>
         
-        <SlideIn delay={0.4} time={1.8} direction="right">
+        <SlideIn delay={0.4} time={1} direction="right">
           <Box mt={10}>
             <Heading as="h3" variant="sectionTitle">
               Tech Stacks
@@ -336,7 +336,7 @@ const Home = () => {
           </Box>
         </SlideIn>
 
-        <SlideIn delay={0.6} time={1.8} direction="left">
+        <SlideIn delay={0.6} time={1} direction="left">
           <Box mt={10}>
             <Heading as="h3" variant="sectionTitle">
               Work Experience
@@ -420,7 +420,7 @@ const Home = () => {
           </Box>
         </SlideIn>
 
-        <SlideIn delay={0.8} time={1.8} direction="right">
+        <SlideIn delay={0.8} time={1} direction="right">
           <Box mt={10}>
             <Heading as="h3" variant="sectionTitle">
               Certifications
@@ -448,7 +448,7 @@ const Home = () => {
           </Box>
         </SlideIn>
 
-        <SlideIn delay={1.0} time={1.8} direction="left">
+        <SlideIn delay={1.0} time={1} direction="left">
           <Box mt={10}>
             <Heading as="h3" variant="sectionTitle">
               Education
@@ -463,7 +463,7 @@ const Home = () => {
           </Box>
         </SlideIn>
 
-        <SlideIn delay={1.2} time={1.8} direction="right">
+        <SlideIn delay={1.2} time={1} direction="right">
           <Box mt={10}>
             <Heading as="h3" variant="sectionTitle">
               Achievements
