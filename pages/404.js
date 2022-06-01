@@ -2,7 +2,7 @@
  * @file 404.js
  * @author Nicolas C
  * @since 26/05/2022
- * @description 404 Page
+ * @description 404 Page.
  */
 
 import Link from "next/link";
