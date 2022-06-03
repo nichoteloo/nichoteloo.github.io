@@ -36,7 +36,7 @@ const Projects = () => {
                     <Heading as="h3" fontSize="2xl" fontFamily="body" mt={3}>
                         {title}
                     </Heading>
-                    <Text mt={1} fontFamily="initial">
+                    <Text mt={1} fontFamily="initial" fontSize={{ lg:"16px", md:"16px", sm:"15px" }}>
                         {children}
                     </Text>
                 </LinkBox>

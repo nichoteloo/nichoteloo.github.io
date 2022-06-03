@@ -14,7 +14,8 @@ import ExperienceEntry from "../components/expentry";
 import EducationEntry from "../components/education";
 import AchievementEntry from "../components/achievement";
 import CertificationEntry from "../components/certification";
-import { Box, Container, Heading, Text, Button, Image, Flex, Badge, SimpleGrid } from "@chakra-ui/react";
+import Tech from "../components/tech";
+import { Box, Container, Heading, Text, Button, Image, Flex, SimpleGrid } from "@chakra-ui/react";
 
 const Home = () => {
   return (
@@ -28,10 +29,10 @@ const Home = () => {
             alignItems="center"
           >
             <Box display="flex" flexDirection="column">
-              <Heading as="h1" fontFamily="initial" fontSize={{ base: "5xl" }}>
+              <Heading as="h1" fontFamily="initial" fontSize={{ lg: "5xl", md: "4xl", sm: "3xl" }}>
                 Nicolas Christianto
               </Heading>
-              <Text fontSize={{ base: "xl", md: "1xl" }}>
+              <Text fontSize={{ lg: "20px", md: "18px", sm: "17px" }}>
                 Data Engineering and Data Management
               </Text>
             </Box>
@@ -43,7 +44,7 @@ const Home = () => {
                 borderStyle="solid"
                 borderColor="gray.300"
                 borderRadius="50%"
-                maxW={200}
+                maxW={{ lg:"200px", md:"195px", sm:"185px" }}
                 mr={-1}
                 mt={10}
                 mb={5}
@@ -57,7 +58,7 @@ const Home = () => {
             <Heading as="h3" variant="sectionTitle">
               About
             </Heading>
-            <Text variant="indented">
+            <Text variant="indented" fontSize={{ lg:"16px", md:"15px", sm: "15px" }} ml={{ lg:"0px", md:"2px", sm:"5px" }} mr={{ lg:"0px", md:"2px", sm:"5px" }}>
               Hi there, I&apos;m Nicolas. I&apos;m a strong engineering professional looking forward
               to provide positive results. I have worked on projects involving machine learning, 
               data engineering, and data management. Having exposure to design latest end to end 
@@ -68,12 +69,12 @@ const Home = () => {
 
             <Box align="center" mt={5}>
               <NextLink href="https://drive.google.com/file/d/1S8az0lKDwU-i2oMf25a83cAKlDgI0uvJ/view?usp=sharing" passHref>
-                <Button mr={2} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
+                <Button mr={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
                   Resume
                 </Button>
               </NextLink>
               <NextLink href="/projects" passHref>
-                <Button ml={2} align="center" rightIcon={<ChevronRightIcon />} colorScheme="gray" h={8}>
+                <Button ml={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<ChevronRightIcon />} colorScheme="gray" h={8}>
                   Projects
                 </Button>
               </NextLink>
@@ -92,246 +93,36 @@ const Home = () => {
                 direction="row"
                 wrap="wrap"
             >
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="teal"
-                >
-                    MySQL
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="messenger"
-                >
-                    MySQL Server
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="yellow"
-                >
-                    PostgreSQL
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="red"
-                >
-                    InfluxDB
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="gray"
-                >
-                    ElasticSearch
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="cyan"
-                >
-                    Airflow
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="orange"
-                >
-                    SSIS
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="messenger"
-                >
-                    Git
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="green"
-                >
-                    AWS Lambda
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="blue"
-                >
-                    AWS Redshift
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="teal"
-                >
-                    AWS S3
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="blue"
-                >
-                    Docker
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="facebook"
-                >
-                    Gitlab CI
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="cyan"
-                >
-                    Flask
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="orange"
-                >
-                    Gin
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="yellow"
-                >
-                    Django
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="blue"
-                >
-                    Linux/Unix
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="green"
-                >
-                    Apache Kafka
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="gray"
-                >
-                    Scikit-learn
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="purple"
-                >
-                    Tensorflow
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="cyan"
-                >
-                    Keras
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="teal"
-                >
-                    Pandas
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="messenger"
-                >
-                    PySpark
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="gray"
-                >
-                    NextJS
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="red"
-                >
-                    PowerBI
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="purple"
-                >
-                    Plotly
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="yellow"
-                >
-                    PTC Thingworx
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="teal"
-                >
-                    Node Red
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="facebook"
-                >
-                    Grafana
-                </Badge>
-                <Badge
-                    mx={1}
-                    my={1}
-                    fontSize={{ base: "0.9em", md: "1em" }}
-                    colorScheme="green"
-                >
-                    GCP Cloud Run
-                </Badge>
+              <Tech title="MySQL" color="teal" />
+              <Tech title="MySQL Server" color="messenger" />
+              <Tech title="PostgreSQL" color="yellow" />
+              <Tech title="InfluxDB" color="red" />
+              <Tech title="ElasticSearch" color="gray" />
+              <Tech title="Airflow" color="cyan" />
+              <Tech title="SSIS" color="orange" />
+              <Tech title="Git" color="messenger" />
+              <Tech title="AWS Lambda" color="green" />
+              <Tech title="AWS Redshift" color="blue" />
+              <Tech title="AWS S3" color="teal" />
+              <Tech title="Docker" color="blue" />
+              <Tech title="Gitlab CI" color="facebook" />
+              <Tech title="Flask" color="cyan" />
+              <Tech title="Gin" color="orange" />
+              <Tech title="Django" color="yellow" />
+              <Tech title="Linux/Unix" color="blue" />
+              <Tech title="Apache Kafka" color="green" />
+              <Tech title="Scikit-learn" color="gray" />
+              <Tech title="Tensorflow" color="purple" />
+              <Tech title="Keras" color="cyan" />
+              <Tech title="Pandas" color="teal" />
+              <Tech title="PySpark" color="messenger" />
+              <Tech title="NextJS" color="gray" />
+              <Tech title="PowerBI" color="red" />
+              <Tech title="Plotly" color="purple" />
+              <Tech title="PTC Thingworx" color="yellow" />
+              <Tech title="Node Red" color="teal" />
+              <Tech title="Grafana" color="facebook" />
+              <Tech title="GCP Cloud Run" color="green" />
             </Flex>
           </Box>
         </SlideIn>
@@ -365,7 +156,7 @@ const Home = () => {
               responsibilities={[
                 'Schema reconstruction for MAM database in PostgreSQL and MySQL Server.',
                 'Setup Gitlab CI/CD pipeline for manufacturing management project.',
-                'Configure CI pipeline integration with Liquibase version control.'
+                'Configure Gitlab CI pipeline integration with Liquibase version control.'
               ]}
               >
             </ExperienceEntry>
@@ -470,7 +261,7 @@ const Home = () => {
             </Heading>
 
             <SimpleGrid mt={8} columns={[1, 2, 2, 2]} gap={6}>
-              <AchievementEntry title='AWS Digital Talent Scholarship, 2020.' issuer='Ministry of Communication and Information.'/>
+              <AchievementEntry title='AWS Digital Talent Scholarship, 2020.' issuer='Ministry of Comm and Informatics.'/>
               <AchievementEntry title='Hankook Scholarship Awardee, 2019.' issuer='PT Hankook Tire Welfare Foundation.'/>
               <AchievementEntry title='PGN Scholarship Awardee, 2020.' issuer='PT Perusahaan Gas Negara Indonesia.'/>
               <AchievementEntry title='Funded PKM-Karsa Cipta, 2019.' issuer='Ministry of Research and Technology.'/>

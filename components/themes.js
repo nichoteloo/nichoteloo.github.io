@@ -6,7 +6,13 @@
  */
 
 import { extendTheme } from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools";
+
+const breakpoints = {
+  sm: '200px',
+  md: '768px',
+  lg: '960px',
+  xl: '1200px',
+}
 
 const fonts = {
   body: "'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
@@ -121,6 +127,6 @@ const colors = {
   },
 };
 
-const theme = extendTheme({ config, fonts, colors, components, styles });
+const theme = extendTheme({ config, fonts, colors, components, styles, breakpoints });
 
 export default theme;

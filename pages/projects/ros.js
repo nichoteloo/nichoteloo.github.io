@@ -11,7 +11,7 @@ import ros from '../../public/images/ros.png';
 const ROS = () => {
     return (
         <Main title="ROS TurtleBot3">
-            <Container px={5} pt={20} maxW='container.md'>
+            <Container px={5} pt={20} maxW='container.md' fontSize={{ lg:"16px", md:"16px", sm:"15px" }}>
                 <SlideIn delay={0} time={1} direction='right'>
                     <Box display='flex' flexDirection='row' alignItems='flex-end'>
                         <Heading as='h1' whiteSpace='nowrap'>
@@ -41,7 +41,7 @@ const ROS = () => {
                     </SlideIn>
                 </Box>
 
-                <Box mt={8}>
+                <Box mt={8} fontSize={{ lg:"15px", md:"15px", sm:"14px" }}>
                     <SlideIn delay={0.8} time={1} direction='left'>
                         <Flex align='center'>
                             <Text variant='projectLabel'>

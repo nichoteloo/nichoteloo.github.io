@@ -11,12 +11,12 @@ import { HStack, Box } from "@chakra-ui/react";
 
 const CertificationEntry = ({ title, issuer }) => {
     return (
-        <HStack>
-            <Box p={1.5} position="relative" overflow="hidden">
+        <HStack m={1}>
+            <Box p={1} position="relative" >
                 <AiFillSafetyCertificate/>
             </Box>
             <Box>
-                <Text ml={1}>{title} issued by <b>{issuer}</b></Text>
+                <Text fontSize={{ lg:"16px", md:"16px", sm:"15px" }} mb={1}>{title} issued by <b>{issuer}</b></Text>
             </Box>
         </HStack>
     );

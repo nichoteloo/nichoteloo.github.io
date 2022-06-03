@@ -11,14 +11,14 @@ import { Flex, Box, UnorderedList, ListItem } from "@chakra-ui/react";
 const ExperienceEntry = ({ date, role, company, indent, client, mb, responsibilities }) => {
     return (
         <Box mb={mb}>
-            <Flex direction="row" rounded="md" w={"full"} mt='2' my={{base: 3, md: 0}}>
-                <Text variant="year" w="24%" textAlign={{base: "-moz-initial", md: "-moz-initial" }}>
+            <Flex direction="row" rounded="md" w={"full"} mt='2' my={{lg: 3, md: 0}}>
+                <Text variant="year" w="24%" textAlign={{lg: "-moz-initial", md: "-moz-initial" }} fontSize={{ lg:"16px", md:"16px", sm:"14px" }}>
                     {date ? date : ''}
                 </Text>
                 
-                <Text w="76%" textAlign="justify">
+                <Text w="76%" textAlign="justify" fontSize={{ lg:"16px", md:"16px", sm:"15px" }}>
                     <b><i>{role ? role : ''}</i> {company ? company : ''}</b>
-                    <Text fontSize={16} mt={2} fontFamily="initial">
+                    <Text mt={2} fontFamily="initial">
                         <Text mb={1}>
                             <b>{client ? client : ''}</b>
                         </Text>

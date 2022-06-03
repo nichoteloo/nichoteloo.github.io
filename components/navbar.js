@@ -21,7 +21,7 @@ const Navbar = () => {
                 <Flex ml={1.5}>
                     <Heading as='h1' size='lg' whiteSpace='nowrap'>
                         <NextLink href='/' passHref>
-                            <Link p={0} _hover={{}} color='white' variant="logo">
+                            <Link p={0} color='white' variant="logo">
                                 <Text fontFamily="fantasy">TeloTech</Text>
                             </Link>
                         </NextLink>
@@ -43,9 +43,9 @@ const Navbar = () => {
                                 as={IconButton} 
                                 icon={menuOpen ? <ChevronUpIcon /> : <ChevronDownIcon />} 
                                 aria-label='menu'/>
-                            <MenuList color='white' fontFamily="body" w="1xl" bgColor='bg.dark'>
+                            <MenuList color='white' fontFamily="body" w="1xl" bgColor='gray.900'>
                                 <NextLink href="/projects" passHref>
-                                    <MenuItem as={Link} >Projects</MenuItem>
+                                    <MenuItem color="white" _focus={ { bg: "charcoal.50" } }>Projects</MenuItem>
                                 </NextLink>
                             </MenuList>
                         </Menu>
