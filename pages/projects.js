@@ -59,7 +59,7 @@ const Projects = () => {
                     </Box>
                 </SlideIn>
 
-                <SimpleGrid mt={8} columns={[1, 2, 2, 2]} gap={8}>
+                <SimpleGrid mt={8} columns={{ lg:"2", md:"2", sm:"1" }} gap={8}>
                     <Grow delay={0} time={1.8}>
                         <ProjectItem image="/images/kafka.png" title="Kafka Event Stream" id="kafka">
                             Kafka event streaming between MySQL database. Created a change data capture (CDC) 

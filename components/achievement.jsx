@@ -20,7 +20,7 @@ const AchievementEntry = ({ title, issuer }) => {
                 <Heading fontSize="16" fontFamily="Work Sans, sans-serif">
                     {title}
                 </Heading>
-                <Text fontSize={14} fontFamily="cursive" mt={1}>
+                <Text fontSize={14} fontFamily="initial" mt={1}>
                     {issuer}
                 </Text>
             </Flex>
