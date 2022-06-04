@@ -47,7 +47,7 @@ const Projects = () => {
 
     return (
         <Main title="Projects">
-            <Container px={8} pt={20} maxW="container.md">
+            <Container px={8} pt={20} maxW={{ lg:"container.md", md:"container.md", sm:"container.sm" }}>
                 <SlideIn delay={0} time={1.5} direction="right">
                     <Box display="flex" flexDirection="column">
                         <Heading as="h1" fontSize={{ lg: "5xl", md:"4xl", sm:"3xl"}} fontFamily="initial">

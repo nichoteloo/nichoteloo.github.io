@@ -20,7 +20,7 @@ import { Box, Container, Heading, Text, Button, Image, Flex, SimpleGrid } from "
 const Home = () => {
   return (
     <Main title="Homepage">
-      <Container px={5} pt={20} maxW="container.md">
+      <Container px={5} pt={20} maxW={{ lg:"container.md", md:"container.md", sm:"container.sm" }}>
         <SlideIn delay={0} time={1} direction="right">
           <Box
             display="flex"
