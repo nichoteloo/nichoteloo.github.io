@@ -16,7 +16,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <Box position='fixed' as='nav' w='100%' zIndex={999} transition='background 1s ease' backdropFilter='blur(20px)'>
+        <Box position={{ lg:'fixed', md:'fixed', sm:'absolute' }} as='nav' w='100%' zIndex={999} transition='background 1s ease' backdropFilter='blur(20px)'>
             <Container maxW='container.md' display='flex' alignItems='center' justifyContent={{ base: 'space-between', md: 'space-evenly' }} p={3}>
                 <Flex ml={1.5}>
                     <Heading as='h1' size='lg' whiteSpace='nowrap'>

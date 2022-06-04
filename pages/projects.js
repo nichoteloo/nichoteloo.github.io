@@ -50,12 +50,9 @@ const Projects = () => {
             <Container px={8} pt={20} maxW="container.md">
                 <SlideIn delay={0} time={1.5} direction="right">
                     <Box display="flex" flexDirection="column">
-                        <Heading as="h1" fontSize={{ base: "5xl" }} fontFamily="initial">
+                        <Heading as="h1" fontSize={{ lg: "5xl", md:"4xl", sm:"3xl"}} fontFamily="initial">
                             Projects
                         </Heading>
-                        <Text fontSize={{ base: "kg", md: "xl" }} fontFamily="body">
-                            These are a collection of my recent projects.
-                        </Text>
                     </Box>
                 </SlideIn>
 

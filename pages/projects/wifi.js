@@ -15,7 +15,7 @@ const WiFi = () => {
             <Container px={5} pt={20} maxW='container.md' fontSize={{ lg:"16px", md:"16px", sm:"15px" }}>
                 <SlideIn delay={0} time={1} direction='right'>
                     <Box display='flex' flexDirection='row' alignItems='flex-end'>
-                        <Heading as='h1' whiteSpace='nowrap'>
+                        <Heading as='h1' whiteSpace='nowrap' fontSize={{ lg:"32px", md:"28px", sm:"24px" }}>
                             WiFi Fingerprint
                         </Heading>
                     </Box>
