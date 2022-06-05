@@ -261,7 +261,7 @@ const Home = () => {
             </Heading>
 
             <SimpleGrid mt={8} columns={[1, 2, 2, 2]} gap={6}>
-              <AchievementEntry title='AWS Digital Talent Scholarship, 2020.' issuer='Ministry of Comm and Informatics.'/>
+              <AchievementEntry title='AWS Digital Talent Scholarship, 2021.' issuer='Ministry of Comm and Informatics.'/>
               <AchievementEntry title='Hankook Scholarship Awardee, 2019.' issuer='PT Hankook Tire Welfare Foundation.'/>
               <AchievementEntry title='PGN Scholarship Awardee, 2020.' issuer='PT Perusahaan Gas Negara Indonesia.'/>
               <AchievementEntry title='Funded PKM-Karsa Cipta, 2019.' issuer='Ministry of Research and Technology.'/>
