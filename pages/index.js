@@ -94,7 +94,7 @@ const Home = () => {
                 wrap="wrap"
             >
               <Tech title="MySQL" color="teal" />
-              <Tech title="MySQL Server" color="messenger" />
+              <Tech title="MSSQL Server" color="messenger" />
               <Tech title="PostgreSQL" color="yellow" />
               <Tech title="InfluxDB" color="red" />
               <Tech title="ElasticSearch" color="gray" />
@@ -141,9 +141,9 @@ const Home = () => {
               indent={8}
               mb={1}
               responsibilities={[
-                'Maintain complex ETL pipeline from SAP platform into MySQL Server.',
+                'Maintain complex ETL pipeline from SAP platform into MSSQL Server.',
                 'Perform data management and data quality checking across multiple dimensions according to business context.',
-                'Create and maintain SQL views, store procedures, triggers, schemas, indexes, and tables in MySQL Server.',
+                'Create and maintain SQL views, store procedures, triggers, schemas, indexes, and tables in MSSQL Server.',
                 'Perform system upgrades, and maintenances according to business needs.'
               ]}
               >
@@ -154,7 +154,7 @@ const Home = () => {
               indent={8}
               mb={1}
               responsibilities={[
-                'Schema reconstruction for MAM database in PostgreSQL and MySQL Server.',
+                'Schema reconstruction for MAM database in PostgreSQL and MSSQL Server.',
                 'Setup Gitlab CI/CD pipeline for manufacturing management project.',
                 'Configure Gitlab CI pipeline integration with Liquibase version control.'
               ]}
