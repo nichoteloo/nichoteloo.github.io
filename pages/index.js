@@ -175,7 +175,7 @@ const Home = () => {
             <ExperienceEntry
               client="4. UTAC Thai Ltd SecsToTool.Net Integration"
               indent={8}
-              mb={8}
+              mb={1}
               responsibilities={[
                 'Support pre-sales activities including feasibility study about SecsToTool.Net integration.',
                 'Create integration script between SecsToTool.Net and Thingworx SDK.'
