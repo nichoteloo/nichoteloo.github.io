@@ -61,14 +61,14 @@ const Home = () => {
             <Text variant="indented" fontSize={{ lg:"16px", md:"15px", sm: "15px" }} ml={{ lg:"0px", md:"2px", sm:"5px" }} mr={{ lg:"0px", md:"2px", sm:"5px" }}>
               Hi there, I&apos;m Nicolas. I&apos;m a strong engineering professional looking forward
               to provide positive results. I have worked on projects involving machine learning, 
-              data engineering, and data management. Having exposure to design latest end to end 
-              ETL pipeline using data engineering tools and technologies such as Python, 
+              data engineering, and data integration. Having exposure to design latest end to end 
+              ETL pipeline using data engineering and integration tools such as Python, .Net,
               Go, SQL, Airflow, Kafka, AWS Lambda, etc. Currently working as a Data Engineer in a
               global software and system integrator company in Bandung, Indonesia.
             </Text>
 
             <Box align="center" mt={5}>
-              <NextLink href="https://drive.google.com/file/d/1S8az0lKDwU-i2oMf25a83cAKlDgI0uvJ/view?usp=sharing" passHref>
+              <NextLink href="https://drive.google.com/file/d/1vPmUwVUMWhgJSjgovupJywo-r0uTDZxG/view?usp=sharing" passHref>
                 <Button mr={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
                   Resume
                 </Button>
