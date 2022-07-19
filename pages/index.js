@@ -33,7 +33,7 @@ const Home = () => {
                 Nicolas Christianto
               </Heading>
               <Text fontSize={{ lg: "20px", md: "18px", sm: "17px" }}>
-                Data Engineering and Data Management
+                Data Engineering and Integration
               </Text>
             </Box>
             <Box>
@@ -173,7 +173,18 @@ const Home = () => {
             </ExperienceEntry>
 
             <ExperienceEntry
-              client="4. Additional Project Support and Training"
+              client="4. UTAC Thai Ltd SecsToTool.Net Integration"
+              indent={8}
+              mb={8}
+              responsibilities={[
+                'Support pre-sales activities including feasibility study about SecsToTool.Net integration.',
+                'Create integration script between SecsToTool.Net and Thingworx SDK.'
+              ]}
+              >
+            </ExperienceEntry>
+
+            <ExperienceEntry
+              client="5. Additional Project Support and Training"
               indent={8}
               mb={8}
               responsibilities={[
