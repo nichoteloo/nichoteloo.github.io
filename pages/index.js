@@ -33,7 +33,7 @@ const Home = () => {
                 Nicolas Christianto
               </Heading>
               <Text fontSize={{ lg: "20px", md: "18px", sm: "17px" }}>
-                Data Engineering and Integration
+                Data Engineering and System Integration
               </Text>
             </Box>
             <Box>
@@ -60,15 +60,16 @@ const Home = () => {
             </Heading>
             <Text variant="indented" fontSize={{ lg:"16px", md:"15px", sm: "15px" }} ml={{ lg:"0px", md:"2px", sm:"5px" }} mr={{ lg:"0px", md:"2px", sm:"5px" }}>
               Hi there, I&apos;m Nicolas. I&apos;m a strong engineering professional looking forward
-              to provide positive results. I have worked on projects involving machine learning, 
-              data engineering, and data integration. Having exposure to design latest end to end 
-              ETL pipeline using data engineering and integration tools such as Python, .Net,
-              Go, SQL, Airflow, Kafka, AWS Lambda, etc. Currently working as a Data Engineer in a
-              global software and system integrator company in Bandung, Indonesia.
+              to provide positive results. I have worked on projects involving data engineering,  
+              backend infrastructure, and system integration. Having exposure to designing the latest 
+              end-to-end Extract-Transform-Load (ETL) pipeline using data engineering and integration 
+              tools such as Python, .NET Core, Go, SQL, Airflow, Kafka, SSIS, AWS Lambda, etc.
+              Currently working as a Data Engineer in a global software and system integrator company 
+              in Bandung, Indonesia.
             </Text>
 
             <Box align="center" mt={5}>
-              <NextLink href="https://drive.google.com/file/d/1vPmUwVUMWhgJSjgovupJywo-r0uTDZxG/view?usp=sharing" passHref>
+              <NextLink href="https://drive.google.com/file/d/133CQfkmJV_D56-01Js9hei4MgKFAJsYY/view?usp=sharing" passHref>
                 <Button mr={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
                   Resume
                 </Button>
@@ -100,7 +101,6 @@ const Home = () => {
               <Tech title="ElasticSearch" color="gray" />
               <Tech title="Airflow" color="cyan" />
               <Tech title="SSIS" color="orange" />
-              <Tech title="Git" color="messenger" />
               <Tech title="AWS Lambda" color="green" />
               <Tech title="AWS Redshift" color="blue" />
               <Tech title="AWS S3" color="teal" />
@@ -109,9 +109,9 @@ const Home = () => {
               <Tech title="Flask" color="cyan" />
               <Tech title="Gin" color="orange" />
               <Tech title="Django" color="yellow" />
+              <Tech title=".NET MVC" color="cyan" />
               <Tech title="Linux/Unix" color="blue" />
               <Tech title="Apache Kafka" color="green" />
-              <Tech title="Scikit-learn" color="gray" />
               <Tech title="Tensorflow" color="purple" />
               <Tech title="Keras" color="cyan" />
               <Tech title="Pandas" color="teal" />
@@ -123,6 +123,7 @@ const Home = () => {
               <Tech title="Node Red" color="teal" />
               <Tech title="Grafana" color="facebook" />
               <Tech title="GCP Cloud Run" color="green" />
+              
             </Flex>
           </Box>
         </SlideIn>
@@ -141,55 +142,33 @@ const Home = () => {
               indent={8}
               mb={1}
               responsibilities={[
-                'Maintain complex ETL pipeline from SAP platform into MSSQL Server.',
+                'Maintain and improve complex ETL pipeline to process data from SAP platform into MSSQL Server.',
                 'Perform data management and data quality checking across multiple dimensions according to business context.',
                 'Create and maintain SQL views, store procedures, triggers, schemas, indexes, and tables in MSSQL Server.',
-                'Perform system upgrades, and maintenances according to business needs.'
-              ]}
-              >
-            </ExperienceEntry>
-
-            <ExperienceEntry 
-              client="2. CAD IT Manufacture Asset Management (MAM)"
-              indent={8}
-              mb={1}
-              responsibilities={[
-                'Schema reconstruction for MAM database in PostgreSQL and MSSQL Server.',
-                'Setup Gitlab CI/CD pipeline for manufacturing management project.',
-                'Configure Gitlab CI pipeline integration with Liquibase version control.'
-              ]}
-              >
-            </ExperienceEntry>
-
-            <ExperienceEntry 
-              client="3. CAD IoT Lab Robotic Process Automation (RPA)"
-              indent={8}
-              mb={1}
-              responsibilities={[
-                'Develop robotic process automation (RPA) script for screen automation.',
-                'Create GUI Desktop application to help client control the automation flow.'
+                'Perform system upgrades and maintenances according to business needs.'
               ]}
               >
             </ExperienceEntry>
 
             <ExperienceEntry
-              client="4. UTAC Thai Ltd SecsToTool.Net Integration"
+              client="2. UTAC Thai Ltd SecsToTool.Net Integration"
               indent={8}
               mb={1}
               responsibilities={[
-                'Support pre-sales activities including feasibility study about SecsToTool.Net integration.',
-                'Create integration script between SecsToTool.Net and Thingworx SDK.'
+                'Support pre-sales activities including feasibility study and integration design discovery from SecsToTool.NET platform.',
+                'Provide several approaches for system integration based on .NET based plugin development.'
               ]}
               >
             </ExperienceEntry>
 
-            <ExperienceEntry
-              client="5. Additional Project Support and Training"
+            <ExperienceEntry 
+              client="3. CAD IT Infrastructure"
               indent={8}
               mb={8}
               responsibilities={[
-                'Perform data modeling, data mapping, and data inventory.',
-                'Provide proof-of-concept about end-to-end modern ETL pipeline in AWS (S3, Lambda, Redshift) with Boto3 SDK.'
+                'Provide web middleware and infrastructure for Gitlab webhook and Gchat service integration.',
+                'Setup multi-repository Gitlab CI pipeline with Liquibase version control.',
+                'Develop robotic process automation (RPA) script & GUI for screen automation.',
               ]}
               >
             </ExperienceEntry>
