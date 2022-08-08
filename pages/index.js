@@ -69,7 +69,7 @@ const Home = () => {
             </Text>
 
             <Box align="center" mt={5}>
-              <NextLink href="https://drive.google.com/file/d/133CQfkmJV_D56-01Js9hei4MgKFAJsYY/view?usp=sharing" passHref>
+              <NextLink href="https://drive.google.com/file/d/1ZIMCZbHem7wLPqxOfqFG1MIOxDsC5I8l/view?usp=sharing" passHref>
                 <Button mr={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
                   Resume
                 </Button>
