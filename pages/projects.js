@@ -58,6 +58,12 @@ const Projects = () => {
 
                 <SimpleGrid mt={8} columns={{ lg:"2", md:"2", sm:"1" }} gap={8}>
                     <Grow delay={0} time={1.8}>
+                        <ProjectItem image="/images/worker.png" title="ETL Worker Pattern" id="worker">
+                            Implementing worker pattern for ETL operation. Exploit several workers to process 
+                            million records from CSV file to PostgreSQL database.
+                        </ProjectItem>
+                    </Grow>
+                    <Grow delay={0} time={1.8}>
                         <ProjectItem image="/images/kafka.png" title="Kafka Event Stream" id="kafka">
                             Kafka event streaming between MySQL database. Created a change data capture (CDC) 
                             service that captures data changes MySQL binary log.

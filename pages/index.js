@@ -33,7 +33,7 @@ const Home = () => {
                 Nicolas Christianto
               </Heading>
               <Text fontSize={{ lg: "20px", md: "18px", sm: "17px" }}>
-                Data Engineering and System Integration
+                Data Engineering and Integration
               </Text>
             </Box>
             <Box>
