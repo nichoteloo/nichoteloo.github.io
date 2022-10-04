@@ -69,7 +69,7 @@ const Home = () => {
             </Text>
 
             <Box align="center" mt={5}>
-              <NextLink href="https://drive.google.com/file/d/1ZIMCZbHem7wLPqxOfqFG1MIOxDsC5I8l/view?usp=sharing" passHref>
+              <NextLink href="https://drive.google.com/file/d/1kiFsspPBwh5ygdj6Vf_bJamayA0uhsm9/view?usp=sharing" passHref>
                 <Button mr={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
                   Resume
                 </Button>
@@ -138,14 +138,12 @@ const Home = () => {
               date="02/2022 - Present" 
               role="Data Engineer" 
               company="at CAD-IT Consultant Pte Ltd"
-              client="1. Collins Aerospace SG Operations Modernization (Scale Up)"
+              client="1. Collins Aerospace SG Operations Modernization"
               indent={8}
               mb={1}
               responsibilities={[
-                'Maintain and improve complex ETL pipeline to process data from SAP platform into MSSQL Server.',
-                'Perform data management and data quality checking across multiple dimensions according to business context.',
-                'Create and maintain SQL views, store procedures, triggers, schemas, indexes, and tables in MSSQL Server.',
-                'Perform system upgrades and maintenances according to business needs.'
+                'Improve ETL pipeline performance by reducing execution time by 90% SAP-MSSQL Server migration.',
+                'Perform data verification, data quality checking, and data warehouse schema redefining.'
               ]}
               >
             </ExperienceEntry>
@@ -155,20 +153,19 @@ const Home = () => {
               indent={8}
               mb={1}
               responsibilities={[
-                'Support pre-sales activities including feasibility study and integration design discovery from SecsToTool.NET platform.',
-                'Provide several approaches for system integration based on .NET based plugin development.'
+                'Pre-sales activities including study and integration design discovery from SecsToTool.NET platform.',
+                'Provide several approaches for data integration based on .NET plugin development (HTTP, SDK, OPC-UA).'
               ]}
               >
             </ExperienceEntry>
 
             <ExperienceEntry 
-              client="3. CAD IT Infrastructure"
+              client="3. Ansell MY Ltd Business Data Migration"
               indent={8}
               mb={8}
               responsibilities={[
-                'Provide web middleware and infrastructure for Gitlab webhook and Gchat service integration.',
-                'Setup multi-repository Gitlab CI pipeline with Liquibase version control.',
-                'Develop robotic process automation (RPA) script & GUI for screen automation.',
+                'Perform query migration and Thingworx query adaptation PostgreSQL-MSSQL.',
+                'Develop, maintain and improve SSIS package for business database data movement.',
               ]}
               >
             </ExperienceEntry>
