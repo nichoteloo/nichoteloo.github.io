@@ -61,15 +61,15 @@ const Home = () => {
             <Text variant="indented" fontSize={{ lg:"16px", md:"15px", sm: "15px" }} ml={{ lg:"0px", md:"2px", sm:"5px" }} mr={{ lg:"0px", md:"2px", sm:"5px" }}>
               Hi there, I&apos;m Nicolas. I&apos;m a strong engineering professional looking forward
               to provide positive results. I have worked on projects involving data engineering,  
-              backend infrastructure, and system integration. Having exposure to designing the latest 
+              data migration, and system integration. Having exposure to designing the latest 
               end-to-end Extract-Transform-Load (ETL) pipeline using data engineering and integration 
-              tools such as Python, .NET Core, Go, SQL, Airflow, Kafka, SSIS, AWS Lambda, etc.
+              tools such as Python, Go, SQL, Airflow, SSIS, Kafka, setc.
               Currently working as a Data Engineer in a global software and system integrator company 
               in Bandung, Indonesia.
             </Text>
 
             <Box align="center" mt={5}>
-              <NextLink href="https://drive.google.com/file/d/1kiFsspPBwh5ygdj6Vf_bJamayA0uhsm9/view?usp=sharing" passHref>
+              <NextLink href="https://drive.google.com/file/d/1a0T6KJ8qqE3amg-SzZ7zT3LdBtRZf8ou/view?usp=sharing" passHref>
                 <Button mr={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
                   Resume
                 </Button>
@@ -105,25 +105,31 @@ const Home = () => {
               <Tech title="AWS Redshift" color="blue" />
               <Tech title="AWS S3" color="teal" />
               <Tech title="Docker" color="blue" />
+              <Tech title="K8s" color="red" />
               <Tech title="Gitlab CI" color="facebook" />
+              <Tech title="Jira" color="gray" />
+              <Tech title="Bitbucket" color="messenger" />
               <Tech title="Flask" color="cyan" />
               <Tech title="Gin" color="orange" />
               <Tech title="Django" color="yellow" />
               <Tech title=".NET MVC" color="cyan" />
               <Tech title="Linux/Unix" color="blue" />
               <Tech title="Apache Kafka" color="green" />
+              <Tech title="Mosquitto MQTT" color="orange" />
               <Tech title="Tensorflow" color="purple" />
               <Tech title="Keras" color="cyan" />
               <Tech title="Pandas" color="teal" />
               <Tech title="PySpark" color="messenger" />
+              <Tech title="ReactJS" color="facebook" />
               <Tech title="NextJS" color="gray" />
               <Tech title="PowerBI" color="red" />
               <Tech title="Plotly" color="purple" />
               <Tech title="PTC Thingworx" color="yellow" />
+              <Tech title="OPC UA Kepware" color="orange" />
               <Tech title="Node Red" color="teal" />
               <Tech title="Grafana" color="facebook" />
               <Tech title="GCP Cloud Run" color="green" />
-              
+
             </Flex>
           </Box>
         </SlideIn>
@@ -148,24 +154,24 @@ const Home = () => {
               >
             </ExperienceEntry>
 
-            <ExperienceEntry
-              client="2. UTAC Thai Ltd SecsToTool.Net Integration"
+            <ExperienceEntry 
+              client="2. Ansell MY Ltd Business Data Migration"
               indent={8}
               mb={1}
               responsibilities={[
-                'Pre-sales activities including study and integration design discovery from SecsToTool.NET platform.',
-                'Provide several approaches for data integration based on .NET plugin development (HTTP, SDK, OPC-UA).'
+                'Perform query migration and Thingworx query adaptation PostgreSQL-MSSQL.',
+                'Develop, maintain and improve SSIS package for business database data movement.',
               ]}
               >
             </ExperienceEntry>
 
-            <ExperienceEntry 
-              client="3. Ansell MY Ltd Business Data Migration"
+            <ExperienceEntry
+              client="3. UTAC Thai Ltd SecsToTool.Net Integration"
               indent={8}
               mb={8}
               responsibilities={[
-                'Perform query migration and Thingworx query adaptation PostgreSQL-MSSQL.',
-                'Develop, maintain and improve SSIS package for business database data movement.',
+                'Pre-sales activities including study and integration design discovery from SecsToTool.NET platform.',
+                'Provide several approaches for data integration based on .NET plugin development (HTTP, SDK, OPC-UA).'
               ]}
               >
             </ExperienceEntry>
@@ -178,9 +184,9 @@ const Home = () => {
               responsibilities={[
                 'Research and analyze the business metrics performance ranging from Product, Sales, Engineering, and any other departments.',
                 'Provide change data capture (CDC) and consumer service approaches to test event streaming between two MySQL with Apache Kafka.',
-                'Develop scheduled data pipeline related to metrics formulation with Airflow.',
-                'Maintain slack apps as a part of the query engine for client reporting.',
-                'Support data cleaning, data ingestion, and data reporting periodically.'
+                'Develop cron jobs and data pipeline related to metrics formulation with Airflow integrated with Bitbucket.',
+                'Maintain Slack apps as a part of the query engine for client reporting.',
+                'Support data cleaning and data preparation for the data mart development process'
               ]}>
             </ExperienceEntry>
 
