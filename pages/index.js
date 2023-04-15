@@ -63,13 +63,13 @@ const Home = () => {
               to provide positive results. I have worked on projects involving data engineering,  
               data migration, and system integration. Having exposure to designing the latest 
               end-to-end Extract-Transform-Load (ETL) pipeline using data engineering and integration 
-              tools such as Python, Go, SQL, Airflow, SSIS, Kafka, setc.
+              tools such as Python, C#, Go, SQL, Airflow, SSIS, Kafka, setc.
               Currently working as a Data Engineer in a global software and system integrator company 
               in Bandung, Indonesia.
             </Text>
 
             <Box align="center" mt={5}>
-              <NextLink href="https://drive.google.com/file/d/1a0T6KJ8qqE3amg-SzZ7zT3LdBtRZf8ou/view?usp=sharing" passHref>
+              <NextLink href="https://drive.google.com/file/d/1ZgZDCaRlZxNp8nI9Khp4Z2ekVO0EA3Gw/view?usp=sharing" passHref>
                 <Button mr={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
                   Resume
                 </Button>
@@ -113,19 +113,14 @@ const Home = () => {
               <Tech title="Gin" color="orange" />
               <Tech title="Django" color="yellow" />
               <Tech title=".NET MVC" color="cyan" />
+              <Tech title="Spring" color="cyan" />
               <Tech title="Linux/Unix" color="blue" />
               <Tech title="Apache Kafka" color="green" />
-              <Tech title="Mosquitto MQTT" color="orange" />
               <Tech title="Tensorflow" color="purple" />
-              <Tech title="Keras" color="cyan" />
               <Tech title="Pandas" color="teal" />
-              <Tech title="PySpark" color="messenger" />
               <Tech title="ReactJS" color="facebook" />
               <Tech title="NextJS" color="gray" />
-              <Tech title="PowerBI" color="red" />
-              <Tech title="Plotly" color="purple" />
               <Tech title="PTC Thingworx" color="yellow" />
-              <Tech title="OPC UA Kepware" color="orange" />
               <Tech title="Node Red" color="teal" />
               <Tech title="Grafana" color="facebook" />
               <Tech title="GCP Cloud Run" color="green" />
@@ -144,7 +139,29 @@ const Home = () => {
               date="02/2022 - Present" 
               role="Data Engineer" 
               company="at CAD-IT Consultant Pte Ltd"
-              client="1. Collins Aerospace SG Operations Modernization"
+              client="1. Infineon Singapore Plant Test Cell Digitalization"
+              indent={8}
+              mb={1}
+              responsibilities={[
+                'Conduct a feasibility study about the machine log data tapping and asset downtime analysis.',
+                'Design solution architecture and calculate resource allocation in pre-sales activity.'
+              ]}
+              >
+            </ExperienceEntry>
+
+            <ExperienceEntry 
+              client="2. Portek DHU Port Digitalization"
+              indent={8}
+              mb={1}
+              responsibilities={[
+                'Perform end-to-end data modeling and deployment process based on screen requirements.',
+                'Design, tune, and maintain machine database to handle 500 tags sensor stream data each second.'
+              ]}
+              >
+            </ExperienceEntry>
+
+            <ExperienceEntry 
+              client="3. Collins Aerospace SG Operations Modernization"
               indent={8}
               mb={1}
               responsibilities={[
@@ -155,7 +172,7 @@ const Home = () => {
             </ExperienceEntry>
 
             <ExperienceEntry 
-              client="2. Ansell MY Ltd Business Data Migration"
+              client="4. Ansell MY Ltd Business Data Migration"
               indent={8}
               mb={1}
               responsibilities={[
@@ -166,7 +183,7 @@ const Home = () => {
             </ExperienceEntry>
 
             <ExperienceEntry
-              client="3. UTAC Thai Ltd SecsToTool.Net Integration"
+              client="5. UTAC Thai Ltd SecsToTool.Net Integration"
               indent={8}
               mb={8}
               responsibilities={[
