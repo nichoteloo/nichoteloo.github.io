@@ -14,7 +14,7 @@ import ExperienceEntry from "../components/expentry";
 import EducationEntry from "../components/education";
 import AchievementEntry from "../components/achievement";
 import CertificationEntry from "../components/certification";
-import Tech from "../components/tech";
+import Expertise from "../components/tech";
 import { Box, Container, Heading, Text, Button, Image, Flex, SimpleGrid } from "@chakra-ui/react";
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
                 Nicolas Christianto
               </Heading>
               <Text fontSize={{ lg: "20px", md: "18px", sm: "17px" }}>
-                Data Engineering and Integration
+                Data-ops Engineer
               </Text>
             </Box>
             <Box>
@@ -59,17 +59,13 @@ const Home = () => {
               About
             </Heading>
             <Text variant="indented" fontSize={{ lg:"16px", md:"15px", sm: "15px" }} ml={{ lg:"0px", md:"2px", sm:"5px" }} mr={{ lg:"0px", md:"2px", sm:"5px" }}>
-              Hi there, I&apos;m Nicolas. I&apos;m a strong engineering professional looking forward
-              to provide positive results. I have worked on projects involving data engineering,  
-              data migration, and system integration. Having exposure to designing the latest 
-              end-to-end Extract-Transform-Load (ETL) pipeline using data engineering and integration 
-              tools such as Python, C#, Go, SQL, Airflow, SSIS, Kafka, setc.
-              Currently working as a Data Engineer in a global software and system integrator company 
-              in Bandung, Indonesia.
+              Hi there, I&apos;m Nicolas. I&apos;m Software Engineer with more than 2 years of professional experience in solution design and
+              integration. I have worked on several projects involving cloud infrastructure, data engineering,  
+              and system integration. Currently working as a Cloud Infra Engineer at Global Samsung Research based in Jakarta, Indonesia.
             </Text>
 
             <Box align="center" mt={5}>
-              <NextLink href="https://drive.google.com/file/d/1ZgZDCaRlZxNp8nI9Khp4Z2ekVO0EA3Gw/view?usp=sharing" passHref>
+              <NextLink href="https://drive.google.com/file/d/1Xdek6QebgN1RSkC6gBDr2B6jk2nKXvL-/view?usp=sharing" passHref>
                 <Button mr={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
                   Resume
                 </Button>
@@ -86,7 +82,7 @@ const Home = () => {
         <SlideIn delay={0.4} time={1} direction="right">
           <Box mt={10}>
             <Heading as="h3" variant="sectionTitle">
-              Tech Stacks
+              Expertise
             </Heading>
             <Flex
                 justifyContent="start"
@@ -94,37 +90,18 @@ const Home = () => {
                 direction="row"
                 wrap="wrap"
             >
-              <Tech title="MySQL" color="teal" />
-              <Tech title="MSSQL Server" color="messenger" />
-              <Tech title="PostgreSQL" color="yellow" />
-              <Tech title="InfluxDB" color="red" />
-              <Tech title="ElasticSearch" color="gray" />
-              <Tech title="Airflow" color="cyan" />
-              <Tech title="SSIS" color="orange" />
-              <Tech title="AWS Lambda" color="green" />
-              <Tech title="AWS Redshift" color="blue" />
-              <Tech title="AWS S3" color="teal" />
-              <Tech title="Docker" color="blue" />
-              <Tech title="K8s" color="red" />
-              <Tech title="Gitlab CI" color="facebook" />
-              <Tech title="Jira" color="gray" />
-              <Tech title="Bitbucket" color="messenger" />
-              <Tech title="Flask" color="cyan" />
-              <Tech title="Gin" color="orange" />
-              <Tech title="Django" color="yellow" />
-              <Tech title=".NET MVC" color="cyan" />
-              <Tech title="Spring" color="cyan" />
-              <Tech title="Linux/Unix" color="blue" />
-              <Tech title="Apache Kafka" color="green" />
-              <Tech title="Tensorflow" color="purple" />
-              <Tech title="Pandas" color="teal" />
-              <Tech title="ReactJS" color="facebook" />
-              <Tech title="NextJS" color="gray" />
-              <Tech title="PTC Thingworx" color="yellow" />
-              <Tech title="Node Red" color="teal" />
-              <Tech title="Grafana" color="facebook" />
-              <Tech title="GCP Cloud Run" color="green" />
-
+              <Expertise title="Data Extraction" color="green" />
+              <Expertise title="Data Profiling" color="gray" />
+              <Expertise title="Data Modeling" color="orange" />
+              <Expertise title="Data Processing" color="purple" />
+              <Expertise title="CI/CD" color="blue" />
+              <Expertise title="Data Migration" color="orange" />
+              <Expertise title="Query Tuning" color="messenger" />
+              <Expertise title="Performance Testing" color="red" />
+              <Expertise title="System Integration" color="facebook" />
+              <Expertise title="Distributed System" color="cyan" />
+              <Expertise title="Event Driven Architecture" color="purple" />
+              <Expertise title="Cloud Native Object" color="green" />
             </Flex>
           </Box>
         </SlideIn>
@@ -135,60 +112,83 @@ const Home = () => {
               Work Experience
             </Heading>
 
+            <ExperienceEntry
+              date="11/2023 - Present"
+              role="Cloud Infra Engineer"
+              company="Samsung Research Indonesia"
+              indent={8}
+              mb={8}
+              responsibilities={[
+                'Develop and maintain microservices build on top of Actor Model Framework focused in Cloud Technology.',
+                'Create benchmark about performance comparison between several Actor Model Frameworks in the aspect of messaging criteria and activation criteria.',
+              ]}
+              >
+            </ExperienceEntry>
+
             <ExperienceEntry 
-              date="02/2022 - Present" 
+              date="02/2022 - 11/2023" 
               role="Data Engineer" 
               company="at CAD-IT Consultant Pte Ltd"
-              client="1. Infineon Singapore Plant Test Cell Digitalization"
+              client="1. Project - Test Cell Machine Failure Analysis - Semiconductor Company - SG"
               indent={8}
               mb={1}
               responsibilities={[
-                'Conduct a feasibility study about the machine log data tapping and asset downtime analysis.',
-                'Design solution architecture and calculate resource allocation in pre-sales activity.'
+                'Played key individual responsible to log data management for a project worth more than USD 500.000.',
+                'Provide initial analysis, solution architecture, and resource sizing in during pre-sales and pilot activity.',
+                'Assist in the advancement of data mapping, parameter correlations, and addressing technical inquiries.',
               ]}
               >
             </ExperienceEntry>
 
             <ExperienceEntry 
-              client="2. Portek DHU Port Digitalization"
+              client="2. Project - Port Digitalization and Monitoring - Port Management Company - IDN"
               indent={8}
               mb={1}
               responsibilities={[
-                'Perform end-to-end data modeling and deployment process based on screen requirements.',
-                'Design, tune, and maintain machine database to handle 500 tags sensor stream data each second.'
+                'Perform end-to-end data modeling and deployment process in accordance with screen requirements.',
+                'Design, tune, and maintain machine database to handle more than 500 sensor data stream each second.',
               ]}
               >
             </ExperienceEntry>
 
             <ExperienceEntry 
-              client="3. Collins Aerospace SG Operations Modernization"
+              client="3. Project - Digital Shop Floor Data Processing - Aerospace Manufacturing Company - SG"
               indent={8}
               mb={1}
               responsibilities={[
-                'Improve ETL pipeline performance by reducing execution time by 90% SAP-MSSQL Server migration.',
-                'Perform data verification, data quality checking, and data warehouse schema redefining.'
+                'Improve ETL performance by reducing execution time by 90% for SAP-MSSQL Server data processing.',
+                'Perform data quality check, assess as-is system performance and provide technical documentation.',
               ]}
               >
             </ExperienceEntry>
 
             <ExperienceEntry 
-              client="4. Ansell MY Ltd Business Data Migration"
+              client="4. Project - Factory Machine Data Migration - Glove Manufacturing Company - MY"
               indent={8}
               mb={1}
               responsibilities={[
-                'Perform query migration and Thingworx query adaptation PostgreSQL-MSSQL.',
-                'Develop, maintain and improve SSIS package for business database data movement.',
+                'Maintain SSIS package for machine data synchronization between on-premise and cloud databases.',
               ]}
               >
             </ExperienceEntry>
 
             <ExperienceEntry
-              client="5. UTAC Thai Ltd SecsToTool.Net Integration"
+              client="5. Presales - SDK Platform Integration - Semiconductor Company based - TH"
+              indent={8}
+              mb={1}
+              responsibilities={[
+                'Conduct a feasibility study about SECS/GEM protocol and SecsToTool.NET simulator platform.',
+                'Provide several approaches for system integration solutions based on NET-based plugin development.',
+              ]}
+              >
+            </ExperienceEntry>
+
+            <ExperienceEntry
+              client="6. RnD - Robot Process Automation - CAD-IT Singapore IoT Lab - SG"
               indent={8}
               mb={8}
               responsibilities={[
-                'Pre-sales activities including study and integration design discovery from SecsToTool.NET platform.',
-                'Provide several approaches for data integration based on .NET plugin development (HTTP, SDK, OPC-UA).'
+                'Develop RPA application and Webhook middleware to automate manual tasks.',
               ]}
               >
             </ExperienceEntry>
@@ -258,7 +258,7 @@ const Home = () => {
             <EducationEntry 
               date="08/2017 - 07/2021"
               expertise="Engineering Physics, Universitas Gadjah Mada, (3.42/4.00)."
-              title="Framework Optimization of Fingerprint Method For Wi-Fi Based Indoor Positioning Technique
+              title="Framework Optimization of Fingerprint Method For Wi-Fi Based Indoor Positioning Expertisenique
               Through Implementation of DBSCAN-K Means Hybrid Clustering and Improved WKNN">
             </EducationEntry>
           </Box>
@@ -274,7 +274,7 @@ const Home = () => {
               <AchievementEntry title='AWS Digital Talent Scholarship, 2021.' issuer='Ministry of Comm and Informatics.'/>
               <AchievementEntry title='Hankook Scholarship Awardee, 2019.' issuer='PT Hankook Tire Welfare Foundation.'/>
               <AchievementEntry title='PGN Scholarship Awardee, 2020.' issuer='PT Perusahaan Gas Negara Indonesia.'/>
-              <AchievementEntry title='Funded PKM-Karsa Cipta, 2019.' issuer='Ministry of Research and Technology.'/>
+              <AchievementEntry title='Funded PKM-Karsa Cipta, 2019.' issuer='Ministry of Research and Expertisenology.'/>
             </SimpleGrid>
           </Box>
         </SlideIn>

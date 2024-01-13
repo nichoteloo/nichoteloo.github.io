@@ -7,7 +7,7 @@
 
 import { Badge } from "@chakra-ui/react";
 
-const Tech = ({ title, color }) => {
+const Expertise = ({ title, color }) => {
     return (
         <Badge
             mx={1}
@@ -20,4 +20,4 @@ const Tech = ({ title, color }) => {
     );
 };
 
-export default Tech;
+export default Expertise;
