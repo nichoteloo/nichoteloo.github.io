@@ -24,10 +24,10 @@ const ROS = () => {
                     <SlideIn delay={0} time={1} direction='left'>
                         <Text variant='indented'>
                             Robot Operating System (ROS) is one of the popular open-source robotics 
-                            software framework and its gained vast acceptance in the robotics community.
+                            software framework and it gained vast acceptance in the robotics community.
                             Noetic is the new L.T.S release of ROS distribution. Noetic primary support 
-                            is for Ubuntu 20.04 (Focal). The released date was May 23rd. 2020.
-                            In ROS Noetic development, I buila a robot from scratch. ROS Noetic
+                            is for Ubuntu 20.04 (Focal). It was released in May 23rd. 2020.
+                            In ROS Noetic development, I buila a robot from scratch. ROS Noetic 
                             already supported by Python3 and TurtleBot3 Stack.
                         </Text>
                     </SlideIn>
@@ -55,7 +55,7 @@ const ROS = () => {
                     <SlideIn delay={0.9} time={1} direction='right'>
                         <Flex align='center' mt={1}>
                             <Text variant='projectLabel'>
-                                Tech Stack
+                                Scope of Tech
                             </Text>
                             <Text ml={2}>
                                 ROS Noetic, Linux Ubuntu 20.04, Python3, TurtleBot3 Stack.

@@ -26,14 +26,14 @@ const Worker = () => {
                             In order to process large CSV file(s), we need to tackle the write operation issue 
                             at the database level which most of the time is very time-consuming. To improve the performance,
                             a newly created worker is spawned to process the write operation. That means multi rows
-                            can be processed/written at the same time into the database. We use golang for this 
-                            purpose as this language has the power to use worker patterns asynchronously.
+                            can be processed/written at the same time into the database. Golang is used as the primary 
+                            language for this POC as this language has the power to use worker patterns asynchronously.
                         </Text>
                     </SlideIn>
                     <SlideIn delay={0} time={1} direction='right'>
                         <Text variant='indented'>
-                            Initially, worker interface is created with only one method, as well as one single 
-                            purpose. Next, we create a WorkerPool which contains several workers to receive
+                            The initial proces worker interface is created with only one method, as well as one single 
+                            purpose. Then we create a WorkerPool which contains several workers to receive
                             jobs and processing tasks. WorkerPool has an array of workers which later will be 
                             chosen and process given jobs in a separate goroutine.  Those jobs will be executed 
                             without blocking each other and this is the secret of program acceleration.
@@ -48,14 +48,14 @@ const Worker = () => {
                                 Output
                             </Text>
                             <Text ml={2}>
-                                Method and Algorithm
+                                Proof of Concept
                             </Text>
                         </Flex>
                     </SlideIn>
                     <SlideIn delay={0.9} time={1} direction='right'>
                         <Flex align='center' mt={1}>
                             <Text variant='projectLabel'>
-                                Tech Stack
+                                Scope of Tech
                             </Text>
                             <Text ml={2}>
                                 Golang, PostgreSQL, Worker Pattern, Concurrency.

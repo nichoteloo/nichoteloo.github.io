@@ -36,9 +36,9 @@ const WiFi = () => {
                     </SlideIn>
                     <SlideIn delay={0} time={1} direction='right'>
                         <Text variant='indented'>
-                            In this project, we propose a new framework for fingerprint-based indoor positioning methods, i.e., DB-K Means 
-                            with Improved WKNN (DB-K-IWKNN). Here, we apply hybrid solutions which incorporate DBSCAN and K-means clustering
-                            in the offline stage and combine both physical and spatial data representation in the online stage. By implementation 
+                            In this project, we proposed a new framework for fingerprint-based indoor positioning methods, i.e., DB-K Means 
+                            with Improved WKNN (DB-K-IWKNN). We apply hybrid solutions which incorporate DBSCAN and K-means clustering
+                            in the offline stage and combine both physical and spatial data representation in the online stage. By the implementation 
                             of DBSCAN and combined data representation, technically, our framework is comprehensively improve the positioning 
                             performance since it will reduce the outlier data very well both for offline or online stage in fingerprint-based 
                             indoor positioning technique.
@@ -53,14 +53,14 @@ const WiFi = () => {
                                 Output
                             </Text>
                             <Text ml={2}>
-                                Method and Algorithm
+                                Proof of Concept
                             </Text>
                         </Flex>
                     </SlideIn>
                     <SlideIn delay={0.9} time={1} direction='right'>
                         <Flex align='center' mt={1}>
                             <Text variant='projectLabel'>
-                                Tech Stack
+                                Scope of Tech
                             </Text>
                             <Text ml={2}>
                                 Python3, Pandas, Plotly, Scikit-learn, InfluxDB, Grafana, NodeRed, Linux Ubuntu.

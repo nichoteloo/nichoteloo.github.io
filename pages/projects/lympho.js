@@ -23,18 +23,18 @@ const Lympho = () => {
                 <Box mt={8}>
                     <SlideIn delay={0} time={1} direction='left'>
                         <Text variant='indented'>
-                            We built healthcare that may help doctors to diagnose a number of lymphoblast cells encountered in 
-                            leukemia patients. Traditionally, the counting process is held manually without any confirmation 
-                            and/or affirmation from any other parties. By using the image classification model we can help doctors 
+                            We built a healthcare application that may help doctors to diagnose a number of lymphoblast cells encountered in 
+                            leukemia patients. Traditionally, the counting process still be done without any confirmation 
+                            and/or affirmation from any parties. By using the image classification model we can help doctors 
                             or medical officers to verify the number of lymphoblast cell.
                         </Text>
                     </SlideIn>
                     <SlideIn delay={0} time={1} direction='right'>
                         <Text variant='indented'>
                             This project was initiated to help our machine learning engineer to maintain our MobileNet V2 model. 
-                            I build a simplified and scalable API developed in the containerized ecosystem and deployed in Cloud 
-                            Run (Google Cloud Platform Service). Besides, I also build a web-based application to help clients 
-                            process images from their Personal Computers (PC). By using the Cloud Run service we are able to run 
+                            I created a simplified and scalable API in the containerized ecosystem, which was then deployed in 
+                            Cloud Run (Google Cloud Platform Service). Furthermore, I built a web-based application to assist 
+                            clients in processing images from their Personal Computers (PC). By using the Cloud Run service we are able to run 
                             stateless containers that are invocable via HTTP requests. It&apos;s serverless by abstracting away all 
                             infrastructure management.
                         </Text>
@@ -55,7 +55,7 @@ const Lympho = () => {
                     <SlideIn delay={0.9} time={1} direction='right'>
                         <Flex align='center' mt={1}>
                             <Text variant='projectLabel'>
-                                Tech Stack
+                                Scope of Tech
                             </Text>
                             <Text ml={2}>
                                 Flask, Tensorflow, FastAPI, Jupyter Notebook, Docker, Heroku, Gunicorn, Swagger UI.

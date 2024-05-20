@@ -31,12 +31,12 @@ const Concurrent = () => {
                     </SlideIn>
                     <SlideIn delay={0} time={1} direction='right'>
                         <Text variant='indented'>
-                            In first scenario, I conduct benchmarking test over several Python modules 
+                            In first scenario, I conducted benchmarking test over several Python modules 
                             which underlying concurrency and parallelism, including asyncio, threadpoolexecutor,
                             and processpoolexecutor. Based on scenario (processing multiple files), processpoolexecutor come as a winner
-                            with lowest time execution. In another scenario, I develop multithread approach
-                            to process one file and separate each record by its chunk size. This approach
-                            is very beneficial especially when processing large records in on file.
+                            with lowest time execution. In another scenario, I developed multithread approach
+                            to process one file and separate each record by its chunk size. This approach is very beneficial 
+                            especially when processing large records file.
                         </Text>
                     </SlideIn>
                 </Box>
@@ -48,14 +48,14 @@ const Concurrent = () => {
                                 Output
                             </Text>
                             <Text ml={2} >
-                                Method and Algorithm
+                                Proof of Concept
                             </Text>
                         </Flex>
                     </SlideIn>
                     <SlideIn delay={0.9} time={1} direction='right'>
                         <Flex align='center' mt={1}>
                             <Text variant='projectLabel'>
-                                Tech Stack
+                                Scope of Tech
                             </Text>
                             <Text ml={2}>
                                 Python3, Asyncio, Threadpoolexecutor, Processpoolexecutor, Pandas.

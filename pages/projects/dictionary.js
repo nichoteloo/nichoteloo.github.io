@@ -23,19 +23,18 @@ const Dictionary = () => {
                 <Box mt={8}>
                     <SlideIn delay={0} time={1} direction='left'>
                         <Text variant='indented'>
-                            Dictionary Apps is the application built to help me find out synonyms of a word. 
-                            Initially built because of the need to find similar words along with examples of 
-                            the sentence accompanying that word. This app is really helpful, especially for 
+                            Dictionary App is the application built to help me find out synonyms of a word. 
+                            Initially built because of the need to find similar words along with 
+                            examples of the sentence accompanying that word. This app is really helpful, especially for 
                             me to find the proper word for scientific paraphrase.
                         </Text>
                     </SlideIn>
                     <SlideIn delay={0} time={1} direction='right'>
                         <Text variant='indented'>
-                            I developed this application by using Django Python web framework. The API
-                            is already provided in public, so I just basically hit the endpoint, build to
-                            JsonResponse schema, and parse it to HTML page. This application already 
-                            deployed in Docker container with Gunicorn WSGI Server. These containers 
-                            represent isolated environments that provide everything necessary to run the application.
+                            I developed this application by using Django Python web framework. The API is already provided 
+                            in public, so I just basically hit the endpoint, build to JsonResponse schema, and parse it to 
+                            HTML page. This application already deployed in Docker container with Gunicorn WSGI Server. 
+                            These containers represent isolated environments that provide everything necessary to run the application.
                         </Text>
                     </SlideIn>
                 </Box>
@@ -54,7 +53,7 @@ const Dictionary = () => {
                     <SlideIn delay={0.9} time={1} direction='right'>
                         <Flex align='center' mt={1}>
                             <Text variant='projectLabel'>
-                                Tech Stack
+                                Scope of Tech
                             </Text>
                             <Text ml={2}>
                                 Django, Docker, HTML, CSS, Javascript, Heroku.

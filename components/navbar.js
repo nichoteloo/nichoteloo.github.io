@@ -28,7 +28,7 @@ const Navbar = () => {
                     <Heading as='h1' size='lg' whiteSpace='nowrap'>
                         <NextLink href='/' passHref>
                             <Link p={0} color='white' variant="logo">
-                                <Text fontFamily="fantasy">TeloTech</Text>
+                                <Text fontFamily="monospace">TeloTech</Text>
                             </Link>
                         </NextLink>
                     </Heading>
@@ -38,7 +38,7 @@ const Navbar = () => {
                     
                 <Stack display={{ base: 'none', md: 'flex' }} mb={1} direction='row' justify='flex-start' align='center'>
                     <NextLink href='/projects' passHref>
-                        <Link color='white' fontFamily="body">Projects</Link>
+                        <Link color='white' fontFamily="inherit">Projects</Link>
                     </NextLink>
                 </Stack>
 

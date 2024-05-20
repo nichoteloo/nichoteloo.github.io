@@ -33,18 +33,19 @@ const Home = () => {
                 Nicolas Christianto
               </Heading>
               <Text fontSize={{ lg: "20px", md: "18px", sm: "17px" }}>
-                Data-ops Engineer
+                Data Infra Engineer
               </Text>
             </Box>
             <Box>
               <Image
-                src="/images/me.jpg"
+                src="/images/myself.jpg"
                 alt="Nicolas C."
                 borderWidth="4px"
                 borderStyle="solid"
                 borderColor="gray.300"
                 borderRadius="50%"
-                maxW={{ lg:"200px", md:"195px", sm:"185px" }}
+                height={{ lg:"200px", md:"195px", sm:"185px" }}
+                maxW={{ lg:"300px", md:"195px", sm:"185px" }}
                 mr={-1}
                 mt={10}
                 mb={5}
@@ -59,13 +60,13 @@ const Home = () => {
               About
             </Heading>
             <Text variant="indented" fontSize={{ lg:"16px", md:"15px", sm: "15px" }} ml={{ lg:"0px", md:"2px", sm:"5px" }} mr={{ lg:"0px", md:"2px", sm:"5px" }}>
-              Hi there, I&apos;m Nicolas. I&apos;m Software Engineer with more than 2 years of professional experience in solution design and
+              Hi there, I&apos;m Nicolas. I&apos;m a Software Engineer with 3 years progressive experience in solution design and
               integration. I have worked on several projects involving cloud infrastructure, data engineering,  
               and system integration. Currently working as a Cloud Infra Engineer at Global Samsung Research based in Jakarta, Indonesia.
             </Text>
 
             <Box align="center" mt={5}>
-              <NextLink href="https://drive.google.com/file/d/1Xdek6QebgN1RSkC6gBDr2B6jk2nKXvL-/view?usp=sharing" passHref>
+              <NextLink href="https://drive.google.com/file/d/1RGDfXQAprYHXaoBJtSzsqSA9cPeWBkBu/view?usp=sharing" passHref>
                 <Button mr={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
                   Resume
                 </Button>
@@ -85,23 +86,15 @@ const Home = () => {
               Expertise
             </Heading>
             <Flex
-                justifyContent="start"
+                justifyContent="center"
                 alignItems="center"
                 direction="row"
                 wrap="wrap"
             >
-              <Expertise title="Data Extraction" color="green" />
-              <Expertise title="Data Profiling" color="gray" />
-              <Expertise title="Data Modeling" color="orange" />
-              <Expertise title="Data Processing" color="purple" />
-              <Expertise title="CI/CD" color="blue" />
-              <Expertise title="Data Migration" color="orange" />
-              <Expertise title="Query Tuning" color="messenger" />
+              <Expertise title="Data Engineering" color="green" />
+              <Expertise title="Cloud Native" color="facebook" />
+              <Expertise title="Amazon Web Services" color="orange"/>
               <Expertise title="Performance Testing" color="red" />
-              <Expertise title="System Integration" color="facebook" />
-              <Expertise title="Distributed System" color="cyan" />
-              <Expertise title="Event Driven Architecture" color="purple" />
-              <Expertise title="Cloud Native Object" color="green" />
             </Flex>
           </Box>
         </SlideIn>
@@ -113,14 +106,17 @@ const Home = () => {
             </Heading>
 
             <ExperienceEntry
-              date="11/2023 - Present"
+              date="12/2023 - Present"
               role="Cloud Infra Engineer"
-              company="Samsung Research Indonesia"
+              company="at Samsung Research Indonesia"
               indent={8}
               mb={8}
               responsibilities={[
-                'Develop and maintain microservices build on top of Actor Model Framework focused in Cloud Technology.',
-                'Create benchmark about performance comparison between several Actor Model Frameworks in the aspect of messaging criteria and activation criteria.',
+                'Supervised, maintained, and benchmarked global core messaging platform implement in microservice architecture and build on top of the actor model framework.',
+                'Engaged in the private cloud integration feature enablement of a Continuous Delivery (CD) as a Service platform, resulting in annual cost reductions in the public cloud.',
+                'Orchestrated the migration of Personally Identifiable Information (PII) data from public to private Key Management Service (KMS) hosting, ensuring cost-effectiveness and compliance with data privacy standards.',
+                'Improved code quality and test coverage scores to satisfy regulatory standards, assuring compliance with minimum acceptance criteria.',
+                'Took the lead in initiating performance benchmark procedures for various Java native frameworks as a foundation for consideration before planning a technology migration in the core backend service.',
               ]}
               >
             </ExperienceEntry>
@@ -133,9 +129,9 @@ const Home = () => {
               indent={8}
               mb={1}
               responsibilities={[
-                'Played key individual responsible to log data management for a project worth more than USD 500.000.',
-                'Provide initial analysis, solution architecture, and resource sizing in during pre-sales and pilot activity.',
-                'Assist in the advancement of data mapping, parameter correlations, and addressing technical inquiries.',
+                'Key individual responsible for overseeing log data management project valued at over USD 500,000.',
+                'Provided an initial analysis, solution architecture, and resource sizing during pre-sales and pilot activity.',
+                'Assisted in the advancement of data mapping, parameter correlations, and addressing technical inquiries.',
               ]}
               >
             </ExperienceEntry>
@@ -145,8 +141,8 @@ const Home = () => {
               indent={8}
               mb={1}
               responsibilities={[
-                'Perform end-to-end data modeling and deployment process in accordance with screen requirements.',
-                'Design, tune, and maintain machine database to handle more than 500 sensor data stream each second.',
+                'Performed end-to-end data modeling and deployment process in accordance with screen requirements.',
+                'Designed, tuned, and maintained machine database to handle more than 500 data stream each second.',
               ]}
               >
             </ExperienceEntry>
@@ -156,8 +152,8 @@ const Home = () => {
               indent={8}
               mb={1}
               responsibilities={[
-                'Improve ETL performance by reducing execution time by 90% for SAP-MSSQL Server data processing.',
-                'Perform data quality check, assess as-is system performance and provide technical documentation.',
+                'Improved ETL performance by reducing execution time by 90% for SAP-MSSQL Server data processing.',
+                'Performed data quality check, assess as-is system performance and provide technical documentation.',
               ]}
               >
             </ExperienceEntry>
@@ -167,7 +163,7 @@ const Home = () => {
               indent={8}
               mb={1}
               responsibilities={[
-                'Maintain SSIS package for machine data synchronization between on-premise and cloud databases.',
+                'Maintained SSIS package for machine data synchronization between on-premise and cloud databases.',
               ]}
               >
             </ExperienceEntry>
@@ -177,8 +173,8 @@ const Home = () => {
               indent={8}
               mb={1}
               responsibilities={[
-                'Conduct a feasibility study about SECS/GEM protocol and SecsToTool.NET simulator platform.',
-                'Provide several approaches for system integration solutions based on NET-based plugin development.',
+                'Conducted a feasibility study about SECS/GEM protocol and SecsToTool.NET simulator platform. ',
+                'Provided several approaches for system integration solutions based on NET-based plugin development.',
               ]}
               >
             </ExperienceEntry>
@@ -188,7 +184,7 @@ const Home = () => {
               indent={8}
               mb={8}
               responsibilities={[
-                'Develop RPA application and Webhook middleware to automate manual tasks.',
+                'Developed RPA application and Webhook middleware to automate manual tasks.',
               ]}
               >
             </ExperienceEntry>
@@ -199,11 +195,9 @@ const Home = () => {
               company="at Geniebook Pte Ltd"
               mb={8}
               responsibilities={[
-                'Research and analyze the business metrics performance ranging from Product, Sales, Engineering, and any other departments.',
-                'Provide change data capture (CDC) and consumer service approaches to test event streaming between two MySQL with Apache Kafka.',
-                'Develop cron jobs and data pipeline related to metrics formulation with Airflow integrated with Bitbucket.',
-                'Maintain Slack apps as a part of the query engine for client reporting.',
-                'Support data cleaning and data preparation for the data mart development process'
+                'Research and analyzed the business metrics performance ranging from Product, Sales, Engineering, etc.',
+                'Provided a proof of concept (POC) real-time pipeline to stream change events between two database servers.',
+                'Orchestrated the data pipelines and Slack bot development for enhanced business metrics reporting.'
               ]}>
             </ExperienceEntry>
 
@@ -213,9 +207,9 @@ const Home = () => {
               company="at Google Bangkit Academy"
               mb={8}
               responsibilities={[
-                'Develop third-party API for lymphoblast cell image classification with MobileNet pre-trained model with Flask web framework.',
-                'Provide a web dashboard with AppSeed Flask open source dashboard.',
-                'Perform API testing for dummy ML model with FastAPI framework.'
+                'Propose and designed system architecture enabling multi-platform deployment (Android and Web).',
+                'Developed third-party API for lymphoblast cell image classification with the MobileNet model.',
+                'Performed API testing and integration for dummy ML model with FastAPI framework.'
               ]}>
             </ExperienceEntry>
           </Box>
@@ -242,10 +236,6 @@ const Home = () => {
             <CertificationEntry 
               issuer="Amazon Web Service"
               title="AWS Academy Graduate with Cloud Foundations Specialization"/>
-
-            <CertificationEntry 
-              issuer="Siemens Digital Academy"
-              title="Industrial Ethernet, Process Control Basic, Profinet"/>
           </Box>
         </SlideIn>
 
@@ -272,9 +262,9 @@ const Home = () => {
 
             <SimpleGrid mt={8} columns={[1, 2, 2, 2]} gap={6}>
               <AchievementEntry title='AWS Digital Talent Scholarship, 2021.' issuer='Ministry of Comm and Informatics.'/>
-              <AchievementEntry title='Hankook Scholarship Awardee, 2019.' issuer='PT Hankook Tire Welfare Foundation.'/>
               <AchievementEntry title='PGN Scholarship Awardee, 2020.' issuer='PT Perusahaan Gas Negara Indonesia.'/>
-              <AchievementEntry title='Funded PKM-Karsa Cipta, 2019.' issuer='Ministry of Research and Expertisenology.'/>
+              <AchievementEntry title='Hankook Scholarship Awardee, 2019.' issuer='PT Hankook Tire Welfare Foundation.'/>
+              <AchievementEntry title='Funded Research Program PKM, 2019.' issuer='Ministry of Research and Expertisenology.'/>
             </SimpleGrid>
           </Box>
         </SlideIn>

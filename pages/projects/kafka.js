@@ -33,11 +33,11 @@ const Kafka = () => {
                     </SlideIn>
                     <SlideIn delay={0} time={1} direction='right'>
                         <Text variant='indented'>
-                            In this project I develop configuration script for CDC deployment, as well as provide consumer 
-                            node to process event from Kafka topic. I use debezium open source distributed platform to catch 
-                            change data capture. After CDC already started, consumer node image later can accomodate update 
-                            and insert event from kafka to stored in destination DB. Consumer node itself is configurable 
-                            and possible to modify it later based on bussiness needs.
+                            In this project, I developed a configuration script for CDC deployment and provided a consumer node 
+                            to process events from a Kafka topic. I use the Debezium open-source distributed platform for 
+                            change data capture. Once CDC started, consumer node will be able to accomodate update and 
+                            insert event from kafka to stored in destination DB. It can be configured and modified by the 
+                            consumer node itself based on business needs.
                         </Text>
                     </SlideIn>
                 </Box>
@@ -56,7 +56,7 @@ const Kafka = () => {
                     <SlideIn delay={0.9} time={1} direction='right'>
                         <Flex align='center' mt={1}>
                             <Text variant='projectLabel'>
-                                Tech Stack
+                                Scope of Tech
                             </Text>
                             <Text ml={2}>
                                 CDC, Python3, Apache Kafka, Docker, Shell Scripting, MySQL.

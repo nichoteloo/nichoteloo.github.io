@@ -15,7 +15,7 @@ const Footer = () => {
             <Divider size="lg" color="gray.500"/>
             <Stack justify="space-between" direction="row"  spacing={{ base: '4', md: '10' }}>
                 <Text fontSize="md" color="subtle" p={2}>
-                    &copy; 2022 - Nicolas
+                    &copy; 2022 - 2024 Nicolas
                 </Text>
 
                 <Stack justify="space-between" direction="row" align="center">

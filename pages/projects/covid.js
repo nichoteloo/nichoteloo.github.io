@@ -35,7 +35,7 @@ const Covid = () => {
                     <SlideIn delay={0} time={1} direction='right'>
                         <Text variant='indented'>
                             This application is developed with Flask Python web framework. Meanwhile, the front 
-                            page or HTML page is developed from scratch. For graph visualization, I use the Plotly 
+                            page or HTML page is developed from scratch. For graph visualization, I used the Plotly 
                             Python library. The file structures (API call function, configuration, template) are 
                             neatly organized and allow developers to make it more scalable.
                         </Text>
@@ -56,7 +56,7 @@ const Covid = () => {
                     <SlideIn delay={0.9} time={1} direction='right'>
                         <Flex align='center' mt={1}>
                             <Text variant='projectLabel'>
-                                Tech Stack
+                                Scope of Tech
                             </Text>
                             <Text ml={2}>
                                 Flask, Plotly, MySQL, HTML, CSS, Javascript, Docker.
