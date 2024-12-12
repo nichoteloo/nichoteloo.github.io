@@ -21,69 +21,49 @@ const Home = () => {
   return (
     <Main title="Homepage">
       <Container px={5} pt={20} maxW={{ lg:"container.md", md:"container.md", sm:"container.sm" }}>
-        <SlideIn delay={0} time={1} direction="right">
-          <Box
-            display="flex"
-            flexDirection={{ base: "column", md: "row" }}
-            justifyContent="space-between"
-            alignItems="center"
-          >
-            <Box display="flex" flexDirection="column">
-              <Heading as="h1" fontFamily="initial" fontSize={{ lg: "5xl", md: "4xl", sm: "3xl" }}>
-                Nicolas Christianto
-              </Heading>
-              <Text fontSize={{ lg: "20px", md: "18px", sm: "17px" }}>
-                Data Infra Engineer
-              </Text>
-            </Box>
-            <Box>
-              <Image
-                src="/images/myself.jpg"
-                alt="Nicolas C."
-                borderWidth="4px"
-                borderStyle="solid"
-                borderColor="gray.300"
-                borderRadius="50%"
-                height={{ lg:"200px", md:"195px", sm:"185px" }}
-                maxW={{ lg:"300px", md:"195px", sm:"185px" }}
-                mr={-1}
-                mt={10}
-                mb={5}
-              ></Image>
-            </Box>
+        <SlideIn delay={0} time={1} direction="left">
+          <Box>
+            <Image
+              src="/images/myself.jpg"
+              alt="Nicolas C."
+              borderWidth="4px"
+              borderStyle="solid"
+              borderColor="gray.300"
+              borderRadius="50%"
+              height={{ lg:"100px", md:"195px", sm:"185px" }}
+              maxW={{ lg:"300px", md:"195px", sm:"185px" }}
+              mr={-1}
+              mt={10}
+              mb={5}
+            ></Image>
           </Box>
-        </SlideIn>
 
-        <SlideIn delay={0.2} time={1} direction="left">
-          <Box mt={4}>
-            <Heading as="h3" variant="sectionTitle">
-              About
-            </Heading>
-            <Text variant="indented" fontSize={{ lg:"16px", md:"15px", sm: "15px" }} ml={{ lg:"0px", md:"2px", sm:"5px" }} mr={{ lg:"0px", md:"2px", sm:"5px" }}>
-              Hi there, I&apos;m Nicolas. I&apos;m a Software Engineer with 3 years progressive experience in solution design and
-              integration. I have worked on several projects involving cloud infrastructure, data engineering,  
-              and system integration. Currently working as a Cloud Infra Engineer at Global Samsung Research based in Jakarta, Indonesia.
+          <Box display="flex" flexDirection="column">
+            <Text 
+              fontSize={{ lg: "20px", md: "18px", sm: "17px" }} 
+              ml={{ lg:"0px", md:"0px", sm:"0px" }}>
+              Hello!
             </Text>
+          </Box>
 
-            <Box align="center" mt={5}>
-              <NextLink href="https://drive.google.com/file/d/1RGDfXQAprYHXaoBJtSzsqSA9cPeWBkBu/view?usp=sharing" passHref>
-                <Button mr={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
-                  Resume
-                </Button>
-              </NextLink>
-              <NextLink href="/projects" passHref>
-                <Button ml={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<ChevronRightIcon />} colorScheme="gray" h={8}>
-                  Projects
-                </Button>
-              </NextLink>
-            </Box>
+          <Box mt={4}>
+            <Text 
+              variant="indented"
+              fontSize={{ lg:"16px", md:"15px", sm: "15px" }} 
+              ml={{ lg:"0px", md:"2px", sm:"5px" }} 
+              mr={{ lg:"0px", md:"2px", sm:"5px" }}>
+              I&apos;m Nicolas. I work as a software and product engineer from Indonesia with more than 3 years of experience. 
+              Act as a technologies with numbers of international projects exposure and wide spectrum of software development life cycle.
+              I have worked on several projects involving cloud infrastructure and data engineering. 
+              Currently working as a Cloud Infra Engineer at Samsung Research Indonesia.
+            </Text>
           </Box>
         </SlideIn>
         
-        <SlideIn delay={0.4} time={1} direction="right">
+        <SlideIn delay={0.2} time={1} direction="right">
           <Box mt={10}>
             <Heading as="h3" variant="sectionTitle">
-              Expertise
+              Tech Stack
             </Heading>
             <Flex
                 justifyContent="center"
@@ -99,7 +79,7 @@ const Home = () => {
           </Box>
         </SlideIn>
 
-        <SlideIn delay={0.6} time={1} direction="left">
+        <SlideIn delay={0.4} time={1} direction="left">
           <Box mt={10}>
             <Heading as="h3" variant="sectionTitle">
               Work Experience
@@ -215,7 +195,7 @@ const Home = () => {
           </Box>
         </SlideIn>
 
-        <SlideIn delay={0.8} time={1} direction="right">
+        <SlideIn delay={0.6} time={1} direction="right">
           <Box mt={10}>
             <Heading as="h3" variant="sectionTitle">
               Certifications
@@ -239,7 +219,7 @@ const Home = () => {
           </Box>
         </SlideIn>
 
-        <SlideIn delay={1.0} time={1} direction="left">
+        <SlideIn delay={0.8} time={1} direction="left">
           <Box mt={10}>
             <Heading as="h3" variant="sectionTitle">
               Education
@@ -247,14 +227,14 @@ const Home = () => {
 
             <EducationEntry 
               date="08/2017 - 07/2021"
-              expertise="Engineering Physics, Universitas Gadjah Mada, (3.42/4.00)."
+              expertise="Engineering Physics, Universitas Gadjah Mada."
               title="Framework Optimization of Fingerprint Method For Wi-Fi Based Indoor Positioning Expertisenique
               Through Implementation of DBSCAN-K Means Hybrid Clustering and Improved WKNN">
             </EducationEntry>
           </Box>
         </SlideIn>
 
-        <SlideIn delay={1.2} time={1} direction="right">
+        <SlideIn delay={1.0} time={1} direction="right">
           <Box mt={10}>
             <Heading as="h3" variant="sectionTitle">
               Achievements
