@@ -11,15 +11,13 @@ import { SlideIn } from "../components/animated";
 import { AiOutlineDownload } from "react-icons/ai";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import ExperienceEntry from "../components/expentry";
-import EducationEntry from "../components/education";
-import AchievementEntry from "../components/achievement";
 import CertificationEntry from "../components/certification";
 import Expertise from "../components/tech";
 import { Box, Container, Heading, Text, Button, Image, Flex, SimpleGrid } from "@chakra-ui/react";
 
 const Home = () => {
   return (
-    <Main title="Homepage">
+    <Main title="Home">
       <Container px={5} pt={20} maxW={{ lg:"container.md", md:"container.md", sm:"container.sm" }}>
         <SlideIn delay={0} time={1} direction="left">
           <Box>
@@ -75,7 +73,7 @@ const Home = () => {
         
         <SlideIn delay={0.2} time={1} direction="right">
           <Box mt={10}>
-            <Heading as="h3" variant="sectionTitle">
+            <Heading as="h3" fontSize={{ lg:"22px", md:"20px", sm: "20px" }} variant="sectionTitle">
               Expertise
             </Heading>
             <Flex
@@ -94,7 +92,7 @@ const Home = () => {
 
         <SlideIn delay={0.4} time={1} direction="left">
           <Box mt={10}>
-            <Heading as="h3" variant="sectionTitle">
+            <Heading as="h3" fontSize="20px" variant="sectionTitle">
               Work Experience
             </Heading>
 
@@ -155,7 +153,7 @@ const Home = () => {
 
         <SlideIn delay={0.6} time={1} direction="right">
           <Box mt={10}>
-            <Heading as="h3" variant="sectionTitle">
+            <Heading as="h3" fontSize="20px" variant="sectionTitle">
               Certifications
             </Heading>
 
