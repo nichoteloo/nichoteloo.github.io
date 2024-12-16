@@ -28,7 +28,12 @@ const Navbar = () => {
                     <Heading as='h1' size='lg' whiteSpace='nowrap'>
                         <NextLink href='/' passHref>
                             <Link p={0} color='white' variant="logo">
-                                <Text fontFamily="monospace">TeloTech</Text>
+                                <Text 
+                                    fontFamily="monospace"
+                                    _hover={{ color: "gray.500" }}
+                                    >
+                                    TeloTech
+                                </Text>
                             </Link>
                         </NextLink>
                     </Heading>

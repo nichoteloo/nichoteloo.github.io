@@ -12,7 +12,7 @@ const Expertise = ({ title, color }) => {
         <Badge
             mx={1}
             my={1}
-            fontSize={{ lg: "16px", md: "15px", sm: "13px" }}
+            fontSize={{ lg: "15px", md: "13px", sm: "13px" }}
             colorScheme={color}
         >
             {title}

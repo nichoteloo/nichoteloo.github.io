@@ -19,7 +19,7 @@ const EducationEntry = ({ date, expertise, title }) => {
                 <Text w="76%" textAlign="justify" fontSize={{ lg:"16px", md:"16px", sm:"15px" }}>
                     {expertise}
                     <Text mt={2} fontFamily="initial">
-                        Thesis title: <i>{title}</i>
+                        Bachelor thesis: <i>{title}</i>
                     </Text>
                 </Text>
             </Flex>
