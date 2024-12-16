@@ -53,7 +53,7 @@ const Home = () => {
               I&apos;m Nicolas. I work as a software and product engineer from Indonesia with more than 3 years of experience. 
               Act as a technologies with numbers of international projects exposure and wide spectrum of software development life cycle.
               I have worked on several projects involving cloud infrastructure and data engineering. 
-              Currently working as a Cloud Infra Engineer at <a href="https://www.samsung.com/id/srin/" target="_blank" class="underline"><i>Samsung Research Indonesia</i></a>.
+              Currently working as a Cloud Infra Engineer at <a href="https://www.samsung.com/id/srin/" className="underline"><i>Samsung Research Indonesia</i></a>.
             </Text>
           </Box>
 
