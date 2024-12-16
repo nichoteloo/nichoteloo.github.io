@@ -26,6 +26,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install --legacy-peer-deps
+    - run: npx browserslist@latest --update-db
     - run: npm run build
     - run: npm run export
     - run: touch ./out/.nojekyll
