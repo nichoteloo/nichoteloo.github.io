@@ -13,7 +13,7 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 import ExperienceEntry from "../components/expentry";
 import CertificationEntry from "../components/certification";
 import Expertise from "../components/tech";
-import { Box, Container, Heading, Text, Button, Image, Flex, SimpleGrid } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, Button, Image, Flex } from "@chakra-ui/react";
 
 const Home = () => {
   return (
@@ -100,6 +100,7 @@ const Home = () => {
               date="12/2023 - Present"
               role="Cloud Infra Engineer"
               company="at Samsung Research Indonesia"
+              status="Full Time"
               indent={4}
               mb={8}
               responsibilities={[
@@ -110,10 +111,25 @@ const Home = () => {
               >
             </ExperienceEntry>
 
+            <ExperienceEntry
+              date="10/2024 - 11/2024"
+              role="Fullstack Engineer"
+              company="at Supreme Court of Republic Indonesia"
+              status="Temporary"
+              indent={4}
+              mb={8}
+              responsibilities={[
+                'Developed full-stack web based notification system with Golang Gin and Vue.js along with Telegram bot integration for stakeholder registration and user notification.',
+                'Provided the scrapping script using chromedp package and deployed app in Windows using NSSM and Nginx.'
+              ]}
+              >
+            </ExperienceEntry>
+
             <ExperienceEntry 
               date="02/2022 - 11/2023" 
               role="Data Engineer" 
               company="at CAD-IT Consultant Pte Ltd"
+              status="Full Time"
               indent={4}
               mb={1}
               responsibilities={[
@@ -129,6 +145,7 @@ const Home = () => {
               date="09/2021 - 02/2022"
               role="Python Developer"
               company="at Geniebook Pte Ltd"
+              status="Full Time"
               mb={8}
               responsibilities={[
                 'Research and analyzed the business metrics performance ranging from Product, Sales, Engineering, etc.',
@@ -141,6 +158,7 @@ const Home = () => {
               date="02/2021 - 07/2021"
               role="Backend Engineer"
               company="at Google Bangkit Academy"
+              status="Internship"
               mb={8}
               responsibilities={[
                 'Propose and designed system architecture enabling multi-platform deployment (Android and Web).',
