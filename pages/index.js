@@ -107,7 +107,7 @@ const Home = () => {
 
             <ExperienceEntry
               date="12/2023 - Present"
-              role="Cloud Infra Engineer"
+              role="Software Engineer, Cloud Infra"
               company="at Samsung Research Indonesia"
               indent={8}
               mb={8}
