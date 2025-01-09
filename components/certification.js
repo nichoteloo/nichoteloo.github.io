@@ -16,7 +16,7 @@ const CertificationEntry = ({ title, issuer }) => {
                 <AiFillSafetyCertificate/>
             </Box>
             <Box>
-                <Text fontSize={{ lg:"16px", md:"16px", sm:"15px" }} mb={1}>{title} issued by <b>{issuer}</b></Text>
+                <Text fontSize={{ lg:"16px", md:"16px", sm:"15px" }} mb={1}>{title}</Text>
             </Box>
         </HStack>
     );

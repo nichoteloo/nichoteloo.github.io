@@ -8,16 +8,20 @@
 import { Text } from "@chakra-ui/layout";
 import { Flex, Box, UnorderedList, ListItem } from "@chakra-ui/react";
 
-const ExperienceEntry = ({ date, role, company, indent, client, mb, responsibilities }) => {
+const ExperienceEntry = ({ date, role, company, indent, client, mb, responsibilities, status }) => {
     return (
         <Box mb={mb}>
             <Flex direction="row" rounded="md" w={"full"} mt='2' my={{lg: 3, md: 0}}>
-                <Text variant="year" w="24%" textAlign={{lg: "-moz-initial", md: "-moz-initial" }} fontSize={{ lg:"16px", md:"16px", sm:"14px" }}>
+                <Text 
+                    variant="year" 
+                    w="24%" 
+                    textAlign={{lg: "-moz-initial", md: "-moz-initial" }} 
+                    fontSize={{ lg:"16px", md:"16px", sm:"14px" }}>
                     {date ? date : ''}
                 </Text>
                 
                 <Text w="76%" textAlign="justify" fontSize={{ lg:"16px", md:"16px", sm:"15px" }}>
-                    <b><i>{role ? role : ''}</i> {company ? company : ''}</b>
+                    <b><i>{role ? role : ''}</i> {company ? company : ''}</b> <Text display="inline" fontSize="13px" fontStyle="oblique">-- {status}</Text>
                     <Text mt={2} fontFamily="initial">
                         <Text mb={1}>
                             <b>{client ? client : ''}</b>
