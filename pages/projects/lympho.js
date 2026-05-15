@@ -55,7 +55,7 @@ const Lympho = () => {
                             I created a simplified and scalable API in the containerized ecosystem, which was then deployed in
                             Cloud Run (Google Cloud Platform Service). Furthermore, I built a web-based application to assist
                             clients in processing images from their Personal Computers (PC). By using the Cloud Run service we are able to run
-                            stateless containers that are invocable via HTTP requests. It's serverless by abstracting away all
+                            stateless containers that are invocable via HTTP requests. Its serverless by abstracting away all
                             infrastructure management.
                         </Text>
                     </SlideIn>
