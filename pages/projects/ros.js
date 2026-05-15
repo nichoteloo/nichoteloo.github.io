@@ -11,64 +11,89 @@ import ros from '../../public/images/ros.png';
 const ROS = () => {
     return (
         <Main title="ROS TurtleBot3">
-            <Container px={5} pt={20} maxW='container.md' fontSize={{ lg:"16px", md:"16px", sm:"15px" }}>
-                <SlideIn delay={0} time={1} direction='right'>
-                    <Box display='flex' flexDirection='row' alignItems='flex-end'>
-                        <Heading as='h1' whiteSpace='nowrap' fontSize={{ lg:"32px", md:"28px", sm:"24px" }}>
+            <Container px={{ base: 4, sm: 6 }} pt={20} maxW="container.md">
+                <SlideIn delay={0} time={1} direction="right">
+                    <Box display="flex" flexDirection="row" alignItems="flex-end">
+                        <Heading
+                            as="h1"
+                            fontSize={{ base: "24px", sm: "28px", md: "32px" }}
+                            fontWeight="700"
+                            letterSpacing="tight"
+                            whiteSpace="nowrap"
+                            color="gray.100"
+                        >
                             ROS TurtleBot3
                         </Heading>
                     </Box>
                 </SlideIn>
 
                 <Box mt={8}>
-                    <SlideIn delay={0} time={1} direction='left'>
-                        <Text variant='indented'>
-                            Robot Operating System (ROS) is one of the popular open-source robotics 
+                    <SlideIn delay={0} time={1} direction="left">
+                        <Text
+                            variant="indented"
+                            fontSize={{ base: "14px", md: "15px" }}
+                            lineHeight="tall"
+                            color="gray.300"
+                            textAlign="justify"
+                            mb={4}
+                        >
+                            Robot Operating System (ROS) is one of the popular open-source robotics
                             software framework and it gained vast acceptance in the robotics community.
-                            Noetic is the new L.T.S release of ROS distribution. Noetic primary support 
-                            is for Ubuntu 20.04 (Focal). It was released in May 23rd. 2020.
-                            In ROS Noetic development, I buila a robot from scratch. ROS Noetic 
+                            Noetic is the new L.T.S release of ROS distribution. Noetic primary support
+                            is for Ubuntu 20.04 (Focal). It was released in May 23rd, 2020.
+                            In ROS Noetic development, I built a robot from scratch. ROS Noetic
                             already supported by Python3 and TurtleBot3 Stack.
                         </Text>
                     </SlideIn>
-                    <SlideIn delay={0} time={1} direction='right'>
-                        <Text variant='indented'>
+                    <SlideIn delay={0} time={1} direction="right">
+                        <Text
+                            variant="indented"
+                            fontSize={{ base: "14px", md: "15px" }}
+                            lineHeight="tall"
+                            color="gray.300"
+                            textAlign="justify"
+                        >
                             TurtleBot is a ROS standard platform robot. There are 3 versions of the TurtleBot model
-                            and TurtleBot3 is the most recent one. TurtleBot3 is a small, affordable, programmable, 
+                            and TurtleBot3 is the most recent one. TurtleBot3 is a small, affordable, programmable,
                             ROS-based mobile robot for use in education, research, hobby, and product prototyping.
-                            Apart from build a robot, I also develop robot movement scenario for navigation and SLAM.
+                            Apart from building a robot, I also develop robot movement scenarios for navigation and SLAM.
                         </Text>
                     </SlideIn>
                 </Box>
 
-                <Box mt={8} fontSize={{ lg:"15px", md:"15px", sm:"14px" }}>
-                    <SlideIn delay={0.8} time={1} direction='left'>
-                        <Flex align='center'>
-                            <Text variant='projectLabel'>
+                <Box mt={8} fontSize={{ base: "13px", md: "14px" }}>
+                    <SlideIn delay={0.8} time={1} direction="left">
+                        <Flex align="center" wrap="wrap" gap={2}>
+                            <Text variant="projectLabel" fontFamily="mono" fontWeight="600" color="gray.400">
                                 Output
                             </Text>
-                            <Text ml={2}>
-                                Prototype
-                            </Text>
+                            <Text color="gray.300">Prototype</Text>
                         </Flex>
                     </SlideIn>
-                    <SlideIn delay={0.9} time={1} direction='right'>
-                        <Flex align='center' mt={1}>
-                            <Text variant='projectLabel'>
+
+                    <SlideIn delay={0.9} time={1} direction="right">
+                        <Flex align="flex-start" wrap="wrap" gap={2} mt={2}>
+                            <Text variant="projectLabel" fontFamily="mono" fontWeight="600" color="gray.400">
                                 Scope of Tech
                             </Text>
-                            <Text ml={2}>
+                            <Text color="gray.300" flex="1">
                                 ROS Noetic, Linux Ubuntu 20.04, Python3, TurtleBot3 Stack.
                             </Text>
                         </Flex>
                     </SlideIn>
-                    <SlideIn delay={1.0} time={1} direction='left'>
-                        <Flex align='center' mt={1}>
-                            <Text variant='projectLabel'>
+
+                    <SlideIn delay={1.0} time={1} direction="left">
+                        <Flex align="center" wrap="wrap" gap={2} mt={2}>
+                            <Text variant="projectLabel" fontFamily="mono" fontWeight="600" color="gray.400">
                                 Source
                             </Text>
-                            <NextLink href='https://github.com/nichoteloo/ROS-Noetic-devel' passHref>
-                                <Link ml={2}>
+                            <NextLink href="https://github.com/nichoteloo/ROS-Noetic-devel" passHref>
+                                <Link
+                                    isExternal
+                                    color="blue.400"
+                                    fontWeight="500"
+                                    _hover={{ color: "blue.300", textDecoration: "underline" }}
+                                >
                                     GitHub
                                 </Link>
                             </NextLink>
@@ -77,16 +102,38 @@ const ROS = () => {
                 </Box>
 
                 <Grow delay={1.3} time={1}>
-                    <Box display='flex' justifyContent='center' mt={8}>
-                        <Image src={ros} alt='ROS-TurtleBot3' />
+                    <Box display="flex" justifyContent="center" mt={8}>
+                        <Image
+                            src={ros}
+                            alt="ROS TurtleBot3 - Robot Prototype"
+                            borderRadius="lg"
+                            shadow="lg"
+                            maxW="100%"
+                            h="auto"
+                            objectFit="cover"
+                            border="1px solid"
+                            borderColor="gray.700"
+                        />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.9} time={1}>
-                    <Box mt={8} align='center'>
-                        <NextLink href='/projects' passHref>
-                            <Button align='center' leftIcon={<ChevronLeftIcon />} colorScheme='blue'>
-                                Projects
+                    <Box mt={12} textAlign="center">
+                        <NextLink href="/projects" passHref>
+                            <Button
+                                leftIcon={<ChevronLeftIcon />}
+                                colorScheme="blue"
+                                variant="outline"
+                                size="md"
+                                fontFamily="mono"
+                                fontWeight="500"
+                                _hover={{
+                                    transform: "translateY(-2px)",
+                                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+                                }}
+                                transition="all 0.2s"
+                            >
+                                Back to Projects
                             </Button>
                         </NextLink>
                     </Box>

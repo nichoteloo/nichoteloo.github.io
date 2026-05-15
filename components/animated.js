@@ -22,7 +22,12 @@ const SlideIn = ({ children, delay, time, direction }) => {
         ix = -10;
     
     return (
-        <AnimatedDiv initial={{ x: ix, opacity: 0 }} animate={{ x: fx, opacity: 1 }} transition={{ duration: time, delay }}>
+        <AnimatedDiv
+            overflow="visible"
+            initial={{ x: ix, opacity: 0 }}
+            animate={{ x: fx, opacity: 1 }}
+            transition={{ duration: time, delay }}
+        >
             {children}
         </AnimatedDiv>
     );
