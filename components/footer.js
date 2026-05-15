@@ -11,15 +11,15 @@ import { Container, Stack, Divider, Text, Link } from "@chakra-ui/react";
 
 const Footer = () => {
     return (
-        <Container maxW='container.md' as="footer" pb={6} mt="16">
-            <Divider size="lg" color="gray.500"/>
-            <Stack justify="space-between" direction="row"  spacing={{ base: '4', md: '10' }}>
-                <Text fontSize="md" color="subtle" p={2}>
-                    &copy; 2022 - 2025 Nicolas
+        <Container maxW='container.md' as="footer" pb={6} mt="8">
+            <Divider size="lg" color="gray.500" />
+            <Stack justify="space-between" direction="row" spacing={{ base: '4', md: '10' }}>
+                <Text fontSize="sm" color="subtle" p={2}>
+                    &copy; 2022 - 2026
                 </Text>
 
-                <Stack justify="space-between" direction="row" align="center">
-                    <Link href="https://twitter.com/nichotelo" color='white'><AiFillTwitterSquare size={21}/></Link>
+                <Stack direction="row" align="center" spacing={-2}>
+                    <Link href="https://twitter.com/nichotelo" color='white'><AiFillTwitterSquare size={21} /></Link>
                     <Link href="https://www.linkedin.com/in/nicolaschristianto/" color='white'><AiFillLinkedin size={21} /></Link>
                     <Link href="mailto:nichotelo@outlook.com" color='white'><MdEmail size={21} /></Link>
                 </Stack>

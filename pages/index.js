@@ -11,142 +11,172 @@ import { SlideIn } from "../components/animated";
 import { AiOutlineDownload } from "react-icons/ai";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import ExperienceEntry from "../components/expentry";
-import CertificationEntry from "../components/certification";
 import Expertise from "../components/tech";
-import { Box, Container, Heading, Text, Button, Image, Flex } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, Button, Flex, Image, Link } from "@chakra-ui/react";
 
 const Home = () => {
   return (
     <Main title="Home">
-      <Container px={5} pt={20} maxW={{ lg:"container.md", md:"container.md", sm:"container.sm" }}>
+      <Container px={5} pt={16} maxW={{ lg: "container.md", md: "container.md", sm: "container.sm" }}>
         <SlideIn delay={0} time={1} direction="left">
-          <Box>
-            <Image
-              src="/images/myself.jpg"
-              alt="Nicolas C."
-              borderWidth="4px"
-              borderStyle="solid"
-              borderColor="gray.300"
-              borderRadius="50%"
-              height={{ lg:"90px", md:"145px", sm:"135px" }}
-              maxW={{ lg:"100px", md:"145px", sm:"135px" }}
-              mx={{ lg:"0", md:"auto", sm:"auto" }}
-              mt={10}
-              mb={5}
-            ></Image>
-          </Box>
+          <Box
+            mt={6}
+            display="flex"
+            flexDirection={{ base: "column", md: "row" }}
+            alignItems={{ md: "center" }}
+            gap={{ base: 6, md: 8 }}
+          >
+            <Box flex={1} order={{ base: 2, md: 1 }}>
+              <Heading
+                as="p"
+                fontFamily="monospace"
+                fontSize={{ base: "20px", sm: "22px", md: "24px" }}
+                fontWeight="700"
+                letterSpacing="-0.03em"
+                color="gray.100"
+                mb={2}
+              >
+                Hello!
+              </Heading>
 
-          <Box>
-            <Text 
-              fontSize={{ lg: "20px", md: "18px", sm: "17px" }} 
-              mx={{ lg:"0", md:"1", sm:"1" }}>
-              <b>Hello!</b>
-            </Text>
-          </Box>
+              <Text
+                fontFamily="monospace"
+                fontSize={{ base: "14px", md: "15px" }}
+                lineHeight="tall"
+                color="gray.300"
+                textAlign="justify"
+              >
+                I&apos;m Nicolas. Software engineer based in Indonesia with 4+ years of experience.
+                Act as a technologist with numbers of international projects and wide spectrum of SDLC processes.
+                Work on several projects related to data engineering and infrastructure.
+                Currently working as a Software Engineer DWH Platform at{" "}
+                <Link
+                  href="https://www.ocbc.com/"
+                  isExternal
+                  color="blue.400"
+                  fontWeight="700"
+                  ml={-2}
+                  mr={-2}
+                  _hover={{ color: "blue.300", textDecoration: "underline" }}
+                >
+                  OCBC Bank
+                </Link>.
+              </Text>
+            </Box>
 
-          <Box mt={4}>
-            <Text 
-              textAlign="justify"
-              fontSize={{ lg:"16px", md:"15px", sm: "15px" }} 
-              ml={{ lg:"0px", md:"2px", sm:"5px" }} 
-              mr={{ lg:"0px", md:"2px", sm:"5px" }}>
-              I&apos;m Nicolas. I work as a software and product engineer from Indonesia with more than 3 years of experience. 
-              Act as a technologies with numbers of international projects exposure and wide spectrum of software development life cycle.
-              I have worked on several projects involving cloud infrastructure and data engineering. 
-              Currently working as a Cloud Infra Engineer at <a href="https://www.samsung.com/id/srin/" className="underline"><i>Samsung Research Indonesia</i></a>.
-            </Text>
-          </Box>
-
-          <Box align="center" mt={5}>
-            <NextLink href="https://drive.google.com/file/d/1RGDfXQAprYHXaoBJtSzsqSA9cPeWBkBu/view?usp=sharing" passHref>
-              <Button mr={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<AiOutlineDownload />} colorScheme="gray" h={8}>
-                Resume
-              </Button>
-            </NextLink>
-            <NextLink href="/projects" passHref>
-              <Button ml={2} fontSize={{ lg:"16px", md:"15px", sm: "14px" }} align="center" rightIcon={<ChevronRightIcon />} colorScheme="gray" h={8}>
-                Projects
-              </Button>
-            </NextLink>
+            <Box
+              flexShrink={0}
+              order={{ base: 1, md: 2 }}
+              textAlign="center"
+              mt={1}
+            >
+              <Image
+                src="/images/myself.jpg"
+                alt="Profile Image of Nicolas"
+                boxSize="145px"
+                objectFit="cover"
+                borderRadius="full"
+                border="2px solid"
+                borderColor="whiteAlpha.800"
+                display="inline-block"
+                shadow="lg"
+              />
+            </Box>
           </Box>
         </SlideIn>
-        
+
         <SlideIn delay={0.2} time={1} direction="right">
-          <Box mt={10}>
-            <Heading as="h3" fontSize={{ lg:"22px", md:"20px", sm: "20px" }} variant="sectionTitle">
+          <Box mt={6}>
+            <Heading
+              as="h5"
+              variant="sectionTitle"
+              size={{ base: "md", lg: "lg" }}
+              mb={4}
+              letterSpacing="tight"
+            >
               Expertise
             </Heading>
             <Flex
-                justifyContent="center"
-                alignItems="center"
-                direction="row"
-                wrap="wrap"
+              gap={{ base: 3, md: 4 }}
+              wrap="wrap"
+              justify="center"
+              align="center"
             >
               <Expertise title="Cloud Native App" color="facebook" />
-              <Expertise title="Amazon Web Services" color="orange"/>
               <Expertise title="Data Engineering" color="green" />
+              <Expertise title="Amazon Web Services" color="orange" />
               <Expertise title="Performance Test" color="red" />
             </Flex>
           </Box>
         </SlideIn>
 
-        <SlideIn delay={0.4} time={1} direction="left">
-          <Box mt={10}>
-            <Heading as="h3" fontSize="20px" variant="sectionTitle">
+        <SlideIn delay={0.2} time={1} direction="left">
+          <Box mt={8}>
+            <Heading as="h5" variant="sectionTitle" size={{ base: "md", lg: "lg" }}>
               Work Experience
             </Heading>
 
             <ExperienceEntry
-              date="12/2023 - Present"
-              role="Software Engineer, Cloud Infra"
-              company="at Samsung Research Indonesia"
+              date="06/2025 - 03/2026"
+              role="Software Engineer II"
+              company="CSG System Inc"
               status="Full Time"
-              indent={4}
-              mb={8}
+              mb={1}
+              responsibilities={[
+                'Designed and delivered integration services with TMF-compliant standards in a microservices environment.',
+                'Integrated Kafka event invalidation to ensure cache config consistency across multi-pod deployments.',
+                'Improved TMF API performance through optimization and benchmarking, resulting in ~60% performance gain.',
+              ]}
+            >
+            </ExperienceEntry>
+
+            <ExperienceEntry
+              date="12/2023 - 05/2025"
+              role="Cloud Infra Engineer"
+              company="Samsung Research"
+              status="Full Time"
+              mb={1}
               responsibilities={[
                 'Participated in the public private cloud deployment and feature improvement of a Continuous Delivery (CD) as a Service platform.',
                 'Managed Personally Identifiable Information (PII) data and network security enhancement within the platform.',
                 'Regularly conducted performance testing and benchmarking across various technology stacks, optimizing configurations for existing deployments.',
               ]}
-              >
+            >
             </ExperienceEntry>
 
             <ExperienceEntry
               date="10/2024 - 11/2024"
               role="Fullstack Engineer"
-              company="at Supreme Court of Republic Indonesia"
+              company="Supreme Court of Indonesia"
               status="Temporary"
-              indent={4}
-              mb={8}
+              mb={1}
               responsibilities={[
                 'Developed full-stack web based notification system with Golang Gin and Vue.js along with Telegram bot integration for stakeholder registration and user notification.',
                 'Provided the scrapping script using chromedp package and deployed app in Windows using NSSM and Nginx.'
               ]}
-              >
+            >
             </ExperienceEntry>
 
-            <ExperienceEntry 
-              date="02/2022 - 11/2023" 
-              role="Data Engineer" 
-              company="at CAD-IT Consultant Pte Ltd"
+            <ExperienceEntry
+              date="02/2022 - 11/2023"
+              role="Data Engineer"
+              company="CAD-IT Consultant"
               status="Full Time"
-              indent={4}
               mb={1}
               responsibilities={[
                 'Key individual responsible for overseeing log data management project valued at over USD 500,000.',
                 'Provided an initial analysis, solution architecture, and resource sizing during pre-sales and pilot activity.',
                 'Performed end-to-end data modeling and deployment process in accordance with screen requirements.',
-                'Improved ETL performance by reducing execution time by 90% for SAP-MSSQL Server data processing.',
               ]}
-              >
+            >
             </ExperienceEntry>
 
-            <ExperienceEntry 
+            <ExperienceEntry
               date="09/2021 - 02/2022"
               role="Python Developer"
-              company="at Geniebook Pte Ltd"
+              company="Geniebook"
               status="Full Time"
-              mb={8}
+              mb={1}
               responsibilities={[
                 'Research and analyzed the business metrics performance ranging from Product, Sales, Engineering, etc.',
                 'Provided a proof of concept (POC) real-time pipeline to stream change events between two database servers.',
@@ -154,38 +184,18 @@ const Home = () => {
               ]}>
             </ExperienceEntry>
 
-            <ExperienceEntry 
+            <ExperienceEntry
               date="02/2021 - 07/2021"
               role="Backend Engineer"
-              company="at Google Bangkit Academy"
+              company="Google Bangkit Academy"
               status="Internship"
-              mb={8}
+              mb={1}
               responsibilities={[
                 'Propose and designed system architecture enabling multi-platform deployment (Android and Web).',
                 'Developed third-party API for lymphoblast cell image classification with the MobileNet model.',
                 'Performed API testing and integration for dummy ML model with FastAPI framework.'
               ]}>
             </ExperienceEntry>
-          </Box>
-        </SlideIn>
-
-        <SlideIn delay={0.6} time={1} direction="right">
-          <Box mt={10}>
-            <Heading as="h3" fontSize="20px" variant="sectionTitle">
-              Certifications
-            </Heading>
-
-            <CertificationEntry 
-              title="Tensorflow Developer Specialization supported by DeepLearning.ai"/>
-            
-            <CertificationEntry 
-              title="Tensorflow Data Deployment Specialization supported by DeepLearning.ai"/>
-            
-            <CertificationEntry 
-              title="Google IT Support for Professional & Google Automation with Python"/>
-
-            <CertificationEntry 
-              title="AWS Academy Graduate with Cloud Foundations Specialization"/>
           </Box>
         </SlideIn>
 

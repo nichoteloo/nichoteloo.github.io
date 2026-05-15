@@ -10,10 +10,23 @@ import { Badge } from "@chakra-ui/react";
 const Expertise = ({ title, color }) => {
     return (
         <Badge
-            mx={1}
-            my={1}
-            fontSize={{ lg: "15px", md: "13px", sm: "13px" }}
+            px={3}
+            py={1.5}
+            fontSize={{ base: "12px", md: "13px", lg: "14px" }}
+            fontFamily="mono"
+            fontWeight="500"
+            letterSpacing="0.02em"
             colorScheme={color}
+            variant="outline"
+            borderRadius="full"
+            transition="all 0.2s"
+            cursor="default"
+            _hover={{
+                transform: "translateY(-2px)",
+                bg: `${color}.900`,
+                color: `${color}.200`,
+                borderColor: `${color}.500`,
+            }}
         >
             {title}
         </Badge>

@@ -8,38 +8,77 @@
 import { Text } from "@chakra-ui/layout";
 import { Flex, Box, UnorderedList, ListItem } from "@chakra-ui/react";
 
-const ExperienceEntry = ({ date, role, company, indent, client, mb, responsibilities, status }) => {
+const ExperienceEntry = ({
+    date,
+    role,
+    company,
+    indent,
+    client,
+    mb,
+    responsibilities,
+    status
+}) => {
     return (
-        <Box mb={mb}>
-            <Flex direction="row" rounded="md" w={"full"} mt='2' my={{lg: 3, md: 0}}>
-                <Text 
-                    variant="year" 
-                    w="24%" 
-                    textAlign={{lg: "-moz-initial", md: "-moz-initial" }} 
-                    fontSize={{ lg:"16px", md:"16px", sm:"14px" }}>
-                    {date ? date : ''}
+        <Box mb={mb || 6}>
+            <Flex
+                direction={{ base: "column", sm: "row" }}
+                gap={{ base: 3, sm: 6 }}
+                rounded="md"
+                w="full"
+                mt={2}
+                py={3}
+                _hover={{ bg: "whiteAlpha.50", transition: "all 0.2s" }}
+            >
+                <Text
+                    variant="year"
+                    w={{ base: "full", sm: "22%" }}
+                    fontSize={{ base: "13px", md: "14px" }}
+                    fontWeight="500"
+                    fontFamily="mono"
+                    color="gray.400"
+                    letterSpacing="0.02em"
+                >
+                    {date || "—"}
                 </Text>
-                
-                <Text w="76%" textAlign="justify" fontSize={{ lg:"16px", md:"16px", sm:"15px" }}>
-                    <b><i>{role ? role : ''}</i> {company ? company : ''}</b> <Text display="inline" fontSize="13px" fontStyle="oblique">-- {status}</Text>
-                    <Text mt={2} fontFamily="initial">
-                        <Text mb={1}>
-                            <b>{client ? client : ''}</b>
+
+                <Box w={{ base: "full", sm: "78%" }}>
+                    <Text fontSize={{ base: "14px", md: "15px" }} fontWeight="bold" color="gray.100">
+                        {role || "Untitled Role"} @ {company || "Unknown Company"}
+                        <Text
+                            as="span"
+                            display="inline"
+                            fontSize="11px"
+                            fontWeight="normal"
+                            fontStyle="italic"
+                            ml={2}
+                            color="gray.500"
+                        >
+                            — {status || "ongoing"}
                         </Text>
-                        <UnorderedList ml={indent}>
-                            {responsibilities.map((i) => {
-                                return (
-                                    <ListItem key={i}>
-                                        {i}
-                                    </ListItem>
-                                );
-                            })}
-                        </UnorderedList>
                     </Text>
-                </Text>
+
+                    {client && (
+                        <Text mt={2} fontWeight="semibold" fontSize="13px" color="gray.300" fontFamily="mono">
+                            {client}
+                        </Text>
+                    )}
+
+                    <UnorderedList ml={indent || 4} mt={2} spacing={1.5}>
+                        {responsibilities.map((item, idx) => (
+                            <ListItem
+                                key={idx}
+                                fontSize={{ base: "13px", md: "14px" }}
+                                color="gray.300"
+                                lineHeight="6"
+                            >
+                                {item}
+                            </ListItem>
+                        ))}
+                    </UnorderedList>
+                </Box>
             </Flex>
         </Box>
     );
-}
+};
 
 export default ExperienceEntry;
