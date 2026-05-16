@@ -110,11 +110,25 @@ const Home = () => {
           </Box>
         </SlideIn>
 
-        <SlideIn delay={0.2} time={1} direction="left">
+        <SlideIn delay={0.4} time={1} direction="left">
           <Box mt={8}>
             <Heading as="h5" variant="sectionTitle" size={{ base: "md", lg: "lg" }}>
               Work Experience
             </Heading>
+
+            <ExperienceEntry
+              date="04/2026 - Present"
+              role="Software Engineer DWH Platform"
+              company="OCBC Bank"
+              status="Full Time"
+              mb={1}
+              responsibilities={[
+                'Delivered integration solutions for key banking platforms to streamline processes and improve reliability.',
+                'Collaborated across teams to align data models and system integrations with business objectives.',
+                'Delivered end-to-end data solutions, spanning backend processing to frontend consumption layers.',
+              ]}
+            >
+            </ExperienceEntry>
 
             <ExperienceEntry
               date="06/2025 - 03/2026"
@@ -132,7 +146,7 @@ const Home = () => {
 
             <ExperienceEntry
               date="12/2023 - 05/2025"
-              role="Cloud Infra Engineer"
+              role="Software Engineer Cloud Infra"
               company="Samsung Research"
               status="Full Time"
               mb={1}
