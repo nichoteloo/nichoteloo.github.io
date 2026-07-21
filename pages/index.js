@@ -46,7 +46,7 @@ const Home = () => {
                 color="gray.300"
                 textAlign="justify"
               >
-                I&apos;m Nicolas. Software engineer based in Indonesia with 4+ years of experience.
+                I&apos;m Nicolas. Software engineer based in Indonesia with 5+ years of experience.
                 Act as a technologist with numbers of international projects and wide spectrum of SDLC processes.
                 Work on several projects related to data engineering and infrastructure.
                 Currently working as a Software Engineer Data Platform at{" "}
