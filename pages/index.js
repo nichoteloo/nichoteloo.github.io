@@ -46,10 +46,10 @@ const Home = () => {
                 color="gray.300"
                 textAlign="justify"
               >
-                I&apos;m Nicolas. Software engineer based in Indonesia with 4+ years of experience.
+                I&apos;m Nicolas. Software engineer based in Indonesia with 5+ years of experience.
                 Act as a technologist with numbers of international projects and wide spectrum of SDLC processes.
                 Work on several projects related to data engineering and infrastructure.
-                Currently working as a Software Engineer DWH Platform at{" "}
+                Currently working as a Software Engineer Data Platform at{" "}
                 <Link
                   href="https://www.ocbc.com/"
                   isExternal
@@ -118,14 +118,14 @@ const Home = () => {
 
             <ExperienceEntry
               date="04/2026 - Present"
-              role="Software Engineer DWH Platform"
+              role="Software Engineer Data Platform"
               company="OCBC Bank"
               status="Full Time"
               mb={1}
               responsibilities={[
-                'Delivered integration solutions for key banking platforms to streamline processes and improve reliability.',
-                'Collaborated across teams to align data models and system integrations with business objectives.',
-                'Delivered end-to-end data solutions, spanning backend processing to frontend consumption layers.',
+                'Delivered solutions across customer service, financial control, procurement, and claims management platforms.',
+                'Engineered legacy service decommissioning and migration from TIBCO-based to modern SOA platforms.',
+                'Provided critical production support, including data patching, port remediation, and bank-wide maintenance.',
               ]}
             >
             </ExperienceEntry>
