@@ -87,48 +87,53 @@ const Projects = () => {
 
                 <SimpleGrid mt={8} columns={{ base: 1, md: 1, lg: 1 }} gap={8}>
                     <Grow delay={0} time={0.8}>
+                        <ProjectItem title="LLM Fraud Analyst" id="fraud" date="Aug 20, 2026">
+                            TODO
+                        </ProjectItem>
+                    </Grow>
+                    <Grow delay={0.2} time={0.8}>
                         <ProjectItem title="ETL Worker Pattern" id="worker" date="Aug 21, 2022">
                             Implementing worker pattern for ETL operation. Exploit several workers to process
                             million records from CSV file to PostgreSQL database.
                         </ProjectItem>
                     </Grow>
-                    <Grow delay={0.2} time={0.8}>
+                    <Grow delay={0.4} time={0.8}>
                         <ProjectItem title="WiFi Fingerprint" id="wifi" date="Jun 12, 2022">
                             Framework optimization with the use of hybrid clustering and improved WKNN algorithm
                             for data preprocessing in WiFi indoor positioning.
                         </ProjectItem>
                     </Grow>
-                    <Grow delay={0.4} time={0.8}>
+                    <Grow delay={0.6} time={0.8}>
                         <ProjectItem title="Covid Monitoring" id="covid" date="Jun 02, 2022">
                             Dashboard for covid case monitoring purposes. Access public API and return the total
                             number based on selected country and visualize it.
                         </ProjectItem>
                     </Grow>
-                    <Grow delay={0.6} time={0.8}>
+                    <Grow delay={0.8} time={0.8}>
                         <ProjectItem title="Kafka Event Stream" id="kafka" date="Apr 29, 2022">
                             Kafka event streaming between MySQL database. Created a change data capture (CDC)
                             service that captures data changes MySQL binary log.
                         </ProjectItem>
                     </Grow>
-                    <Grow delay={0.8} time={0.8}>
+                    <Grow delay={1.0} time={0.8}>
                         <ProjectItem title="Concurrent ETL" id="concurrent" date="Apr 04, 2022">
                             Perform concurrency and parallelism to process several files in ETL scenarios.
                             Benchmarking test over several underlying Python modules.
                         </ProjectItem>
                     </Grow>
-                    <Grow delay={1.0} time={0.8}>
+                    <Grow delay={1.2} time={0.8}>
                         <ProjectItem title="Lymphoblast Counter" id="lympho" date="Dec 19, 2021">
                             Simplified and scalable API for the image classification machine learning model.
                             Configured and deployed in the google cloud ecosystem.
                         </ProjectItem>
                     </Grow>
-                    <Grow delay={1.2} time={0.8}>
+                    <Grow delay={1.4} time={0.8}>
                         <ProjectItem title="Dictionary App" id="dictionary" date="Jun 17, 2021">
                             An application that helps me with my scientific paraphrasing needs. Find similar
                             words and their example sentences.
                         </ProjectItem>
                     </Grow>
-                    <Grow delay={1.4} time={0.8}>
+                    <Grow delay={1.6} time={0.8}>
                         <ProjectItem title="ROS TurtleBot3" id="ros" date="Jun 03, 2021">
                             Developing robot movement in ROS Noetic ecosystem. Run in Linux Ubuntu 20.04 and
                             supported by Python3 and TurtleBot3 stack.
