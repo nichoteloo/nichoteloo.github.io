@@ -37,10 +37,10 @@ const Fraud = () => {
                             textAlign="justify"
                             mb={4}
                         >
-                            I'm bilding a production-grade Fraud Detection Pipeline from end to end, 
-                            using synthetic transaction data from PaySim as the foundation. The pipeline 
-                            applies deterministic statistical rules to identify suspicious transaction patterns 
-                            and surface potential fraud cases. Rather than relying entirely on AI, 
+                            I&apos;m building a production-grade Fraud Detection Pipeline from end to end,
+                            using synthetic transaction data from PaySim as the foundation. The pipeline
+                            applies deterministic statistical rules to identify suspicious transaction patterns
+                            and surface potential fraud cases. Rather than relying entirely on AI,
                             the detection logic remains transparent, explainable, and deterministic.
                         </Text>
                     </SlideIn>
@@ -52,11 +52,11 @@ const Fraud = () => {
                             color="gray.300"
                             textAlign="justify"
                         >
-                            To complement the detection layer, a locally hosted LLM acts as an 
-                            advisory narrator for fraud analysts. It turns the detected signals 
-                            and transaction context into concise, human-readable explanations 
-                            without making the actual fraud decision. The result is a practical 
-                            combination of deterministic detection and AI-assisted interpretation, 
+                            To complement the detection layer, a locally hosted LLM acts as an
+                            advisory narrator for fraud analysts. It turns the detected signals
+                            and transaction context into concise, human-readable explanations
+                            without making the actual fraud decision. The result is a practical
+                            combination of deterministic detection and AI-assisted interpretation,
                             designed to make fraud investigation faster and easier to understand.
                         </Text>
                     </SlideIn>
