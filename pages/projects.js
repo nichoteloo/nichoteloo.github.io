@@ -88,7 +88,8 @@ const Projects = () => {
                 <SimpleGrid mt={8} columns={{ base: 1, md: 1, lg: 1 }} gap={8}>
                     <Grow delay={0} time={0.8}>
                         <ProjectItem title="LLM Fraud Analyst" id="fraud" date="Aug 20, 2026">
-                            TODO
+                            Production-grade pipeline that processes transaction data, flags suspicious activities, 
+                            and leverages LLM as an advisory narrator 
                         </ProjectItem>
                     </Grow>
                     <Grow delay={0.2} time={0.8}>
