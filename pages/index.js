@@ -49,7 +49,7 @@ const Home = () => {
                 I&apos;m Nicolas. Software engineer based in Indonesia with 5+ years of experience.
                 Act as a technologist with numbers of international projects and wide spectrum of SDLC processes.
                 Work on several projects related to data engineering and infrastructure.
-                Currently working as a Software Engineer Data Platform at{" "}
+                Currently working as a Sr. Software Engineer Data Platform at{" "}
                 <Link
                   href="https://www.ocbc.com/"
                   isExternal
@@ -118,7 +118,7 @@ const Home = () => {
 
             <ExperienceEntry
               date="04/2026 - Present"
-              role="Software Engineer Data Platform"
+              role="Sr. Software Engineer Data Platform"
               company="OCBC Bank"
               status="Full Time"
               mb={1}
